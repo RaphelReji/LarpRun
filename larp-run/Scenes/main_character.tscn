@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://cqyrq18ac8ylf"]
+
+[ext_resource type="Texture2D" uid="uid://dxlyijtqg8h7w" path="res://Assets/Main Characters/Ninja Frog/Jump (32x32).png" id="1_0eyao"]
+[ext_resource type="Script" uid="uid://jbc3i4v77uvc" path="res://Scenes/main_character.gd" id="1_11o2n"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1pfk3"]
+size = Vector2(54, 78)
+
+[node name="CharacterBody2D" type="CharacterBody2D" unique_id=2101380640]
+script = ExtResource("1_11o2n")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2018657531]
+texture_filter = 1
+position = Vector2(4, -4.000004)
+scale = Vector2(2.3515625, 2.7343755)
+texture = ExtResource("1_0eyao")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=306201720]
+position = Vector2(2, 0)
+shape = SubResource("RectangleShape2D_1pfk3")

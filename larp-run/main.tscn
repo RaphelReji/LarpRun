@@ -2,6 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://b782exnto4gpr" path="res://Assets/Background/Green.png" id="1_0xm2m"]
 [ext_resource type="Texture2D" uid="uid://db45g3p8rffjf" path="res://Assets/Terrain/Terrain (16x16).png" id="2_h2yge"]
+[ext_resource type="PackedScene" uid="uid://cqyrq18ac8ylf" path="res://Scenes/main_character.tscn" id="3_h2yge"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1bvp3"]
 texture = ExtResource("2_h2yge")
@@ -11,10 +12,15 @@ texture = ExtResource("2_h2yge")
 3:0/0 = 0
 4:0/0 = 0
 6:0/0 = 0
+6:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 7:0/0 = 0
+7:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 8:0/0 = 0
+8:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 9:0/0 = 0
+9:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 10:0/0 = 0
+10:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 12:0/0 = 0
 13:0/0 = 0
 14:0/0 = 0
@@ -28,23 +34,34 @@ texture = ExtResource("2_h2yge")
 3:1/0 = 0
 4:1/0 = 0
 6:1/0 = 0
+6:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 7:1/0 = 0
+7:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 8:1/0 = 0
+8:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 9:1/0 = 0
+9:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 10:1/0 = 0
+10:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 12:1/0 = 0
 13:1/0 = 0
 14:1/0 = 0
 15:1/0 = 0
 17:1/0 = 0
+17:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, -3.2374563, -8, -3.2374563)
 18:1/0 = 0
+18:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, -3.2374563, -8, -3.2374563)
 19:1/0 = 0
+19:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, -3.2374563, -8, -3.2374563)
 0:2/0 = 0
 1:2/0 = 0
 2:2/0 = 0
 6:2/0 = 0
+6:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 7:2/0 = 0
+7:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 8:2/0 = 0
+8:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 13:2/0 = 0
 14:2/0 = 0
 15:2/0 = 0
@@ -151,6 +168,7 @@ texture = ExtResource("2_h2yge")
 20:10/0 = 0
 
 [sub_resource type="TileSet" id="TileSet_1pfk3"]
+physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_1bvp3")
 
 [node name="Node" type="Node" unique_id=1693354081]
@@ -170,3 +188,6 @@ texture_filter = 1
 scale = Vector2(3, 3)
 tile_map_data = PackedByteArray("AAAAAA4AAAAHAAAAAAABAA4AAAAHAAAAAAACAA4AAAAHAAAAAAADAA4AAAAHAAAAAAAEAA4AAAAHAAAAAAAFAA4AAAAHAAAAAAAGAA4AAAAHAAAAAAAHAA4AAAAHAAAAAAAIAA4AAAAHAAAAAAAJAA4AAAAHAAAAAAAKAA4AAAAHAAAAAAALAA4AAAAHAAAAAAAMAA4AAAAHAAAAAAANAA4AAAAHAAAAAAAOAA4AAAAHAAAAAAAPAA4AAAAHAAAAAAAQAA4AAAAHAAAAAAARAA4AAAAHAAAAAAASAA4AAAAHAAAAAAATAA4AAAAHAAAAAAAUAA4AAAAHAAAAAAAVAA4AAAAHAAAAAAAWAA4AAAAHAAAAAAAXAA4AAAAHAAAAAAAYAA4AAAAHAAAAAAAZAA4AAAAHAAAAAAAaAA4AAAAHAAAAAAAAAAcAAAAGAAAAAAABAAcAAAAHAAAAAAACAAcAAAAIAAAAAAAAAAgAAAAGAAEAAAAAAAkAAAAGAAEAAAABAAgAAAAHAAEAAAABAAkAAAAHAAEAAAACAAgAAAAHAAEAAAACAAkAAAAHAAEAAAAAAAoAAAAGAAEAAAABAAoAAAAHAAEAAAAAAAsAAAAGAAEAAAAAAAwAAAAGAAEAAAABAAsAAAAHAAEAAAABAAwAAAAHAAEAAAACAAsAAAAHAAEAAAACAAwAAAAHAAEAAAAAAA0AAAAGAAIAAAABAA0AAAAHAAIAAAACAA0AAAAHAAEAAAADAAgAAAAHAAAAAAADAAkAAAAHAAEAAAAEAAgAAAAHAAAAAAAEAAkAAAAHAAEAAAADAAoAAAAHAAIAAAAEAAoAAAAHAAIAAAACAAoAAAAHAAEAAAAIAAgAAAAHAAAAAAAIAAkAAAAHAAEAAAAIAAoAAAAHAAEAAAAJAAoAAAAHAAEAAAAJAAgAAAAHAAAAAAAJAAkAAAAHAAEAAAAKAAgAAAARAAEAAAALAAgAAAASAAEAAAAMAAgAAAATAAEAAAANAAgAAAAHAAAAAAAOAAgAAAAHAAAAAAAPAAgAAAAHAAAAAAANAAkAAAAGAAEAAAANAAoAAAAGAAIAAAAOAAkAAAAHAAEAAAAOAAoAAAAHAAIAAAAPAAkAAAAIAAEAAAAPAAoAAAAIAAIAAAAXAAgAAAAGAAAAAAAYAAgAAAAGAAAAAAAZAAgAAAAHAAAAAAAaAAgAAAAIAAAAAAAXAAkAAAAGAAEAAAAXAAoAAAAGAAIAAAAYAAkAAAAHAAEAAAAYAAoAAAAHAAIAAAAZAAkAAAAIAAEAAAAZAAoAAAAIAAIAAAAaAAkAAAAIAAEAAAAaAAoAAAAIAAEAAAAXAAsAAAAGAAEAAAAYAAsAAAAHAAEAAAAZAAsAAAAIAAEAAAAXAAwAAAAGAAIAAAAYAAwAAAAHAAIAAAAZAAwAAAAIAAIAAAAYAA0AAAAHAAIAAAAZAA0AAAAIAAIAAAAaAAwAAAAIAAIAAAAaAA0AAAAIAAIAAAAXAA0AAAAGAAIAAAAaAAsAAAAIAAIAAAASAAoAAAAGAAAAAAATAAoAAAAHAAAAAAAUAAoAAAAIAAAAAAASAAsAAAAGAAEAAAATAAsAAAAHAAEAAAAUAAsAAAAIAAEAAAASAAMAAAAGAAAAAAASAAQAAAAGAAEAAAATAAMAAAAHAAAAAAATAAQAAAAHAAEAAAA=")
 tile_set = SubResource("TileSet_1pfk3")
+
+[node name="CharacterBody2D" parent="." unique_id=2101380640 instance=ExtResource("3_h2yge")]
+position = Vector2(89, 260)
