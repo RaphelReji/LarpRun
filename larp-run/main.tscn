@@ -3,6 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://b782exnto4gpr" path="res://Assets/Background/Green.png" id="1_0xm2m"]
 [ext_resource type="Texture2D" uid="uid://db45g3p8rffjf" path="res://Assets/Terrain/Terrain (16x16).png" id="2_h2yge"]
 [ext_resource type="PackedScene" uid="uid://cqyrq18ac8ylf" path="res://Scenes/main_character.tscn" id="3_h2yge"]
+[ext_resource type="PackedScene" uid="uid://dg45ufwtnru5x" path="res://Scenes/collectable.tscn" id="4_1bvp3"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1bvp3"]
 texture = ExtResource("2_h2yge")
@@ -192,3 +193,21 @@ tile_set = SubResource("TileSet_1pfk3")
 
 [node name="CharacterBody2D" parent="." unique_id=2101380640 instance=ExtResource("3_h2yge")]
 position = Vector2(89, 260)
+
+[node name="Camera2D" type="Camera2D" parent="CharacterBody2D" unique_id=440777884]
+position = Vector2(7, 6)
+position_smoothing_enabled = true
+position_smoothing_speed = 7.0
+
+[node name="collectable" parent="." unique_id=1558812643 instance=ExtResource("4_1bvp3")]
+position = Vector2(444, 342)
+
+[node name="collectable2" parent="." unique_id=1267409868 instance=ExtResource("4_1bvp3")]
+position = Vector2(687, 344)
+
+[node name="collectable3" parent="." unique_id=126391581 instance=ExtResource("4_1bvp3")]
+position = Vector2(928, 444)
+
+[node name="collectable4" parent="." unique_id=1706921031 instance=ExtResource("4_1bvp3")]
+position = Vector2(1167, 339)
+scale = Vector2(3.3060226, 3.0170655)
