@@ -160,10 +160,10 @@ script = ExtResource("3_72w8f")
 
 [node name="WorldTitle" type="Label" parent="." unique_id=1620728069]
 layout_mode = 0
-offset_left = 390.0
-offset_top = 93.0
-offset_right = 861.0
-offset_bottom = 143.0
+offset_left = 373.0
+offset_top = 74.0
+offset_right = 844.0
+offset_bottom = 124.0
 theme_override_font_sizes/font_size = 36
 text = "WORLD 1 - THE BEGINNING"
 

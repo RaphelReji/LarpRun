@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://bo5duweryqco7" path="res://Scenes/game_objects/finish.tscn" id="6_qnnww"]
 [ext_resource type="PackedScene" uid="uid://bwgs1mtkg8q0o" path="res://Scenes/game_objects/enemy.tscn" id="8_oxu8x"]
 [ext_resource type="Texture2D" uid="uid://todit6q73l88" path="res://Assets/Items/heart.png" id="9_as02b"]
+[ext_resource type="Script" uid="uid://bhtuvoxl2malg" path="res://Scenes/levels/pause.gd" id="9_jfump"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1bvp3"]
 texture = ExtResource("3_lhsqt")
@@ -316,3 +317,47 @@ texture_filter = 1
 layout_mode = 2
 texture = ExtResource("9_as02b")
 expand_mode = 2
+
+[node name="Pause" type="Node" parent="UI" unique_id=1144280346]
+script = ExtResource("9_jfump")
+
+[node name="PausePanel" type="Panel" parent="UI/Pause" unique_id=1566251398]
+unique_name_in_owner = true
+visible = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="UI/Pause/PausePanel" unique_id=983064772]
+layout_mode = 0
+offset_left = 438.0
+offset_top = 251.0
+offset_right = 835.0
+offset_bottom = 334.0
+theme_override_font_sizes/font_size = 60
+text = "Game Paused"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="UI/Pause/PausePanel" unique_id=1674834168]
+layout_mode = 0
+offset_left = 553.0
+offset_top = 388.0
+offset_right = 769.0
+offset_bottom = 494.0
+theme_override_constants/separation = 13
+
+[node name="Resume" type="Button" parent="UI/Pause/PausePanel/VBoxContainer" unique_id=1227794747]
+process_mode = 3
+layout_mode = 2
+text = "Resume"
+
+[node name="Menu" type="Button" parent="UI/Pause/PausePanel/VBoxContainer" unique_id=584445503]
+process_mode = 3
+layout_mode = 2
+text = "Menu"
+
+[connection signal="pressed" from="UI/Pause/PausePanel/VBoxContainer/Resume" to="UI/Pause" method="_on_resume_pressed"]
+[connection signal="pressed" from="UI/Pause/PausePanel/VBoxContainer/Menu" to="UI/Pause" method="_on_menu_pressed"]
