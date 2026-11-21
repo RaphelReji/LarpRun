@@ -8,7 +8,7 @@ const JUMP_VELOCITY = -900.0
 func  jump():
 	velocity.y = JUMP_VELOCITY
 
-func jump_side(x):
+func jump_slide(x):
 	velocity.y = JUMP_VELOCITY
 	velocity.x = x
 	
