@@ -7,6 +7,8 @@
 [ext_resource type="PackedScene" uid="uid://dg45ufwtnru5x" path="res://Scenes/collectable.tscn" id="5_rqhku"]
 [ext_resource type="PackedScene" uid="uid://bo5duweryqco7" path="res://Scenes/finish.tscn" id="6_cpkqv"]
 [ext_resource type="PackedScene" uid="uid://d35qapuwnwp1r" path="res://Scenes/level2.tscn" id="7_d1mwp"]
+[ext_resource type="Texture2D" uid="uid://todit6q73l88" path="res://Assets/Items/heart.png" id="8_4iphx"]
+[ext_resource type="PackedScene" uid="uid://bwgs1mtkg8q0o" path="res://Scenes/enemy.tscn" id="8_jgkgd"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1bvp3"]
 texture = ExtResource("3_jgkgd")
@@ -245,6 +247,14 @@ position = Vector2(2143, 153)
 position = Vector2(2502, 265)
 target_level = ExtResource("7_d1mwp")
 
+[node name="Enemies" type="Node" parent="Scene objects" unique_id=757102276]
+
+[node name="Enemy" parent="Scene objects/Enemies" unique_id=385064553 instance=ExtResource("8_jgkgd")]
+position = Vector2(1255, 350)
+
+[node name="Enemy2" parent="Scene objects/Enemies" unique_id=1165439511 instance=ExtResource("8_jgkgd")]
+position = Vector2(1629, 495)
+
 [node name="UI" type="CanvasLayer" parent="." unique_id=488532058]
 
 [node name="Panel" type="Panel" parent="UI" unique_id=1766660438]
@@ -265,3 +275,45 @@ theme_override_font_sizes/font_size = 25
 text = "Points: 0"
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="Hearts" type="Panel" parent="UI" unique_id=1311674813]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -159.0
+offset_top = 17.0
+offset_right = -31.0
+offset_bottom = 57.0
+grow_horizontal = 0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="UI/Hearts" unique_id=989256284]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -59.5
+offset_top = -18.0
+offset_right = 59.5
+offset_bottom = 18.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Heart" type="TextureRect" parent="UI/Hearts/HBoxContainer" unique_id=840022711]
+texture_filter = 1
+layout_mode = 2
+texture = ExtResource("8_4iphx")
+expand_mode = 2
+
+[node name="Heart2" type="TextureRect" parent="UI/Hearts/HBoxContainer" unique_id=1866237594]
+texture_filter = 1
+layout_mode = 2
+texture = ExtResource("8_4iphx")
+expand_mode = 2
+
+[node name="Heart3" type="TextureRect" parent="UI/Hearts/HBoxContainer" unique_id=1165130625]
+texture_filter = 1
+layout_mode = 2
+texture = ExtResource("8_4iphx")
+expand_mode = 2
