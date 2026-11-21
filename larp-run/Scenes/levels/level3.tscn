@@ -10,6 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://bwgs1mtkg8q0o" path="res://Scenes/game_objects/enemy.tscn" id="8_a4qth"]
 [ext_resource type="Script" uid="uid://eidlg1okw7lw" path="res://Scenes/game_objects/fall_area.gd" id="9_ctiwq"]
 [ext_resource type="Texture2D" uid="uid://todit6q73l88" path="res://Assets/Items/heart.png" id="10_du4s5"]
+[ext_resource type="Script" uid="uid://bhtuvoxl2malg" path="res://Scenes/levels/pause.gd" id="11_inq6p"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1bvp3"]
 texture = ExtResource("3_u4tmg")
@@ -195,9 +196,10 @@ sources/0 = SubResource("TileSetAtlasSource_1bvp3")
 
 [node name="Node" type="Node" unique_id=1693354081]
 
-[node name="GameManager" type="Node" parent="." unique_id=1863513295]
+[node name="GameManager" type="Node" parent="." unique_id=1863513295 node_paths=PackedStringArray("hearts")]
 unique_name_in_owner = true
 script = ExtResource("1_3t033")
+hearts = [NodePath("../UI/Hearts/HBoxContainer/Heart"), NodePath("../UI/Hearts/HBoxContainer/Heart2"), NodePath("../UI/Hearts/HBoxContainer/Heart3")]
 
 [node name="Scene objects" type="Node" parent="." unique_id=764507428]
 
@@ -328,4 +330,47 @@ layout_mode = 2
 texture = ExtResource("10_du4s5")
 expand_mode = 2
 
+[node name="Pause" type="Node" parent="UI" unique_id=1167322997]
+script = ExtResource("11_inq6p")
+
+[node name="PausePanel" type="Panel" parent="UI/Pause" unique_id=960298300]
+unique_name_in_owner = true
+visible = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="UI/Pause/PausePanel" unique_id=411892532]
+layout_mode = 0
+offset_left = 438.0
+offset_top = 251.0
+offset_right = 835.0
+offset_bottom = 334.0
+theme_override_font_sizes/font_size = 60
+text = "Game Paused"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="UI/Pause/PausePanel" unique_id=1308994160]
+layout_mode = 0
+offset_left = 553.0
+offset_top = 388.0
+offset_right = 769.0
+offset_bottom = 494.0
+theme_override_constants/separation = 13
+
+[node name="Resume" type="Button" parent="UI/Pause/PausePanel/VBoxContainer" unique_id=1818145613]
+process_mode = 3
+layout_mode = 2
+text = "Resume"
+
+[node name="Menu" type="Button" parent="UI/Pause/PausePanel/VBoxContainer" unique_id=867805698]
+process_mode = 3
+layout_mode = 2
+text = "Menu"
+
 [connection signal="body_entered" from="Scene objects/Area2D" to="Scene objects/Area2D" method="_on_body_entered"]
+[connection signal="pressed" from="UI/Pause/PausePanel/VBoxContainer/Resume" to="UI/Pause" method="_on_resume_pressed"]
+[connection signal="pressed" from="UI/Pause/PausePanel/VBoxContainer/Menu" to="UI/Pause" method="_on_menu_pressed"]
