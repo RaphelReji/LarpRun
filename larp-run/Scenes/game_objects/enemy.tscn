@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://bwgs1mtkg8q0o"]
 
 [ext_resource type="Texture2D" uid="uid://dydxnyii4pd5f" path="res://Assets/slime_purple.png" id="1_hghv2"]
+[ext_resource type="Script" uid="uid://dhrtmd4v8ln1f" path="res://Scenes/game_objects/enemy.gd" id="1_x3e2n"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_1f0kj"]
 atlas = ExtResource("1_hghv2")
@@ -69,7 +70,11 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1pfk3"]
 size = Vector2(48, 51)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tkg2v"]
+size = Vector2(54, 54)
+
 [node name="Enemy" type="RigidBody2D" unique_id=385064553]
+script = ExtResource("1_x3e2n")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=598567459]
 texture_filter = 1
@@ -82,3 +87,11 @@ frame_progress = 0.2818684
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1463360117]
 position = Vector2(0, 7.5)
 shape = SubResource("RectangleShape2D_1pfk3")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1826846318]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=2137498708]
+position = Vector2(0, 6)
+shape = SubResource("RectangleShape2D_tkg2v")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

@@ -5,6 +5,8 @@ const SPEED = 400.0
 const JUMP_VELOCITY = -900.0
 @onready var sprite_2d = $Sprite2D
 
+func  jump():
+	velocity.y = JUMP_VELOCITY
 
 func _physics_process(delta: float) -> void:
 	
