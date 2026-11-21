@@ -6,7 +6,6 @@
 [ext_resource type="PackedScene" uid="uid://cqyrq18ac8ylf" path="res://Scenes/game_objects/main_character.tscn" id="4_pcesw"]
 [ext_resource type="PackedScene" uid="uid://dg45ufwtnru5x" path="res://Scenes/game_objects/collectable.tscn" id="5_wfc72"]
 [ext_resource type="PackedScene" uid="uid://bo5duweryqco7" path="res://Scenes/game_objects/finish.tscn" id="6_posmm"]
-[ext_resource type="PackedScene" uid="uid://d35qapuwnwp1r" path="res://Scenes/levels/level2.tscn" id="7_1e6mf"]
 [ext_resource type="PackedScene" uid="uid://bwgs1mtkg8q0o" path="res://Scenes/game_objects/enemy.tscn" id="8_a4qth"]
 [ext_resource type="Script" uid="uid://eidlg1okw7lw" path="res://Scenes/game_objects/fall_area.gd" id="9_ctiwq"]
 [ext_resource type="Texture2D" uid="uid://todit6q73l88" path="res://Assets/Items/heart.png" id="10_du4s5"]
@@ -247,7 +246,6 @@ position = Vector2(1231, 586)
 
 [node name="Finish" parent="Scene objects" unique_id=946222195 instance=ExtResource("6_posmm")]
 position = Vector2(1544, 173)
-target_level = ExtResource("7_1e6mf")
 
 [node name="Enemies" type="Node" parent="Scene objects" unique_id=757102276]
 
