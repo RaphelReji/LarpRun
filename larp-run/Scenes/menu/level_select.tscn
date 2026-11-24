@@ -1,7 +1,6 @@
 [gd_scene format=3 uid="uid://bmtwd7fadlglc"]
 
 [ext_resource type="Script" uid="uid://rf7ygqij4q0m" path="res://Scenes/menu/level_select.gd" id="1_1q73p"]
-[ext_resource type="Texture2D" uid="uid://lh2m7iophjpo" path="res://Assets/Background/Brown.png" id="2_wtaar"]
 [ext_resource type="Texture2D" uid="uid://ckracc2aabhaf" path="res://Assets/Menu/Levels/01.png" id="3_650x2"]
 [ext_resource type="Script" uid="uid://dai0vtjoc0lfv" path="res://Scenes/menu/level_1_btn.gd" id="4_1q73p"]
 [ext_resource type="Texture2D" uid="uid://c3tklax1kj1wu" path="res://Assets/Menu/Levels/02.png" id="5_ty75k"]
@@ -31,7 +30,6 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("2_wtaar")
 stretch_mode = 1
 
 [node name="MapPath" type="Node2D" parent="." unique_id=1701720417]
@@ -229,3 +227,5 @@ text = ">"
 [connection signal="pressed" from="MapPath/LevelButtons/LevelBtn2" to="MapPath/LevelButtons/LevelBtn1" method="_on_level_btn_2_pressed"]
 [connection signal="pressed" from="MapPath/LevelButtons/LevelBtn3" to="MapPath/LevelButtons/LevelBtn1" method="_on_level_btn_3_pressed"]
 [connection signal="pressed" from="MapPath/LevelButtons/LevelBtn4" to="MapPath/LevelButtons/LevelBtn1" method="_on_level_btn_4_pressed"]
+[connection signal="pressed" from="HBoxContainer/PreviousWorldBtn" to="." method="_on_previous_world_btn_pressed"]
+[connection signal="pressed" from="HBoxContainer/NextWorldBtn" to="." method="_on_next_world_btn_pressed"]
