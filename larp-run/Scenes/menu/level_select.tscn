@@ -18,6 +18,30 @@
 [ext_resource type="Texture2D" uid="uid://c8gk88j7rd616" path="res://Assets/Menu/Levels/08.png" id="11_0fiia"]
 [ext_resource type="Texture2D" uid="uid://bsutvmw7biorq" path="res://Assets/Menu/Levels/09.png" id="12_0ffed"]
 [ext_resource type="Texture2D" uid="uid://cy2niwo3o8nr4" path="res://Assets/Menu/Levels/10.png" id="13_c6u0j"]
+[ext_resource type="Texture2D" uid="uid://bt7rks67y61rv" path="res://Assets/Menu/Levels/11.png" id="19_6iy6y"]
+[ext_resource type="Texture2D" uid="uid://c6j8yp0h543ne" path="res://Assets/Menu/Levels/12.png" id="20_v7jfp"]
+[ext_resource type="Texture2D" uid="uid://bropq7flroc0e" path="res://Assets/Menu/Levels/13.png" id="21_ymrs7"]
+[ext_resource type="Texture2D" uid="uid://hgoej7gfabb3" path="res://Assets/Menu/Levels/14.png" id="22_mq4fn"]
+[ext_resource type="Texture2D" uid="uid://db8c5gbrxcxmr" path="res://Assets/Menu/Levels/15.png" id="23_po6uh"]
+[ext_resource type="Texture2D" uid="uid://c6gax55dcfpkm" path="res://Assets/Menu/Levels/16.png" id="24_1pobh"]
+[ext_resource type="Texture2D" uid="uid://c3ksxk8iim3bb" path="res://Assets/Menu/Levels/17.png" id="25_0d0lh"]
+[ext_resource type="Texture2D" uid="uid://cyd2di08hh7f0" path="res://Assets/Menu/Levels/18.png" id="26_3dt5p"]
+[ext_resource type="Texture2D" uid="uid://cestomnsso74f" path="res://Assets/Menu/Levels/19.png" id="27_y704u"]
+[ext_resource type="Texture2D" uid="uid://bkqp1fvcs6xhf" path="res://Assets/Menu/Levels/20.png" id="28_nqvme"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_np1q4"]
+bg_color = Color(0.1882353, 0.4, 0.4509804, 1)
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6iy6y"]
+bg_color = Color(0.1882353, 0.4, 0.44705883, 1)
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
 
 [node name="LevelSelect" type="Control" unique_id=884549214]
 layout_mode = 3
@@ -29,6 +53,7 @@ grow_vertical = 2
 script = ExtResource("1_1q73p")
 
 [node name="WorldBackground" type="Parallax2D" parent="." unique_id=412646240]
+z_index = -10
 scroll_offset = Vector2(258, 239)
 
 [node name="Layer1" type="Sprite2D" parent="WorldBackground" unique_id=479054841]
@@ -63,9 +88,41 @@ texture = ExtResource("6_3o52v")
 
 [node name="Layer6" type="Sprite2D" parent="WorldBackground" unique_id=1556557330]
 texture_filter = 1
-position = Vector2(384.0001, 105.499985)
-scale = Vector2(2.1000001, 2.0138888)
+position = Vector2(385.50006, 113.999985)
+scale = Vector2(2.0951617, 2.061111)
 texture = ExtResource("7_0fiia")
+
+[node name="BackBtn" type="Button" parent="." unique_id=1865308297]
+layout_mode = 1
+offset_right = 58.0
+offset_bottom = 33.0
+text = "BACK"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=1578142954]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -141.0
+offset_top = 18.0
+offset_right = -17.0
+offset_bottom = 78.0
+grow_horizontal = 0
+alignment = 1
+
+[node name="PreviousWorldBtn" type="Button" parent="HBoxContainer" unique_id=509186980]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+theme_override_font_sizes/font_size = 36
+theme_override_styles/normal = SubResource("StyleBoxFlat_np1q4")
+text = "<"
+
+[node name="NextWorldBtn" type="Button" parent="HBoxContainer" unique_id=809093125]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+theme_override_font_sizes/font_size = 36
+theme_override_styles/normal = SubResource("StyleBoxFlat_6iy6y")
+text = ">"
 
 [node name="Background" type="TextureRect" parent="." unique_id=544275310]
 texture_filter = 1
@@ -78,6 +135,7 @@ grow_vertical = 2
 stretch_mode = 1
 
 [node name="World1Map" type="Node2D" parent="." unique_id=1701720417]
+visible = false
 
 [node name="PathLine" type="Line2D" parent="World1Map" unique_id=1943148161]
 position = Vector2(26, 3)
@@ -239,40 +297,11 @@ offset_bottom = 124.0
 theme_override_font_sizes/font_size = 36
 text = "WORLD 1 - THE BEGINNING"
 
-[node name="BackBtn" type="Button" parent="." unique_id=1865308297]
-layout_mode = 1
-offset_right = 58.0
-offset_bottom = 33.0
-text = "BACK"
-
-[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=1578142954]
-layout_mode = 1
-anchors_preset = 1
-anchor_left = 1.0
-anchor_right = 1.0
-offset_left = -79.0
-offset_top = 18.0
-offset_right = -17.0
-offset_bottom = 78.0
-grow_horizontal = 0
-alignment = 1
-
-[node name="PreviousWorldBtn" type="Button" parent="HBoxContainer" unique_id=509186980]
-layout_mode = 2
-theme_override_font_sizes/font_size = 36
-text = "<"
-
-[node name="NextWorldBtn" type="Button" parent="HBoxContainer" unique_id=809093125]
-layout_mode = 2
-theme_override_font_sizes/font_size = 36
-text = ">"
-
 [node name="World2Map" type="Node2D" parent="." unique_id=158411963]
-visible = false
 
 [node name="PathLine" type="Line2D" parent="World2Map" unique_id=687464357]
 position = Vector2(26, 3)
-points = PackedVector2Array(74, 526, 241, 260, 354, 605, 467, 428, 731, 631, 655, 408, 1042, 603, 824, 260, 1100, 400, 1188, 160)
+points = PackedVector2Array(41, 169, 228, 263, 354, 605, 467, 428, 731, 631, 655, 408, 1042, 603, 824, 260, 1100, 400, 1195, 164, 498, 66, 441, 145)
 default_color = Color(0.016842017, 0.006297972, 0.05945588, 1)
 joint_mode = 2
 begin_cap_mode = 2
@@ -285,14 +314,16 @@ offset_right = 40.0
 offset_bottom = 40.0
 
 [node name="LevelBtn1" type="TextureButton" parent="World2Map/LevelButtons" unique_id=2146251767]
+modulate = Color(0.3403393, 0.34033933, 0.3403393, 1)
 texture_filter = 1
 layout_mode = 0
-offset_left = 60.0
-offset_top = 488.0
-offset_right = 140.0
-offset_bottom = 568.0
+offset_left = 37.0
+offset_top = 137.0
+offset_right = 117.0
+offset_bottom = 217.0
 tooltip_text = "LEVEL 1"
-texture_normal = ExtResource("3_650x2")
+disabled = true
+texture_normal = ExtResource("19_6iy6y")
 stretch_mode = 0
 script = ExtResource("4_1q73p")
 
@@ -306,7 +337,7 @@ offset_right = 304.0
 offset_bottom = 314.0
 tooltip_text = "LEVEL 2"
 disabled = true
-texture_normal = ExtResource("5_ty75k")
+texture_normal = ExtResource("20_v7jfp")
 stretch_mode = 0
 script = ExtResource("4_1q73p")
 
@@ -320,7 +351,7 @@ offset_right = 417.0
 offset_bottom = 644.0
 tooltip_text = "LEVEL 3"
 disabled = true
-texture_normal = ExtResource("6_np1q4")
+texture_normal = ExtResource("21_ymrs7")
 stretch_mode = 0
 script = ExtResource("4_1q73p")
 
@@ -334,7 +365,7 @@ offset_right = 531.0
 offset_bottom = 474.0
 tooltip_text = "LEVEL 4"
 disabled = true
-texture_normal = ExtResource("7_6iy6y")
+texture_normal = ExtResource("22_mq4fn")
 stretch_mode = 0
 script = ExtResource("4_1q73p")
 
@@ -348,7 +379,7 @@ offset_right = 794.0
 offset_bottom = 673.0
 tooltip_text = "LEVEL 5"
 disabled = true
-texture_normal = ExtResource("8_5tgk1")
+texture_normal = ExtResource("23_po6uh")
 stretch_mode = 0
 script = ExtResource("4_1q73p")
 
@@ -362,7 +393,7 @@ offset_right = 718.0
 offset_bottom = 450.0
 tooltip_text = "LEVEL 6"
 disabled = true
-texture_normal = ExtResource("9_ytj60")
+texture_normal = ExtResource("24_1pobh")
 stretch_mode = 0
 script = ExtResource("4_1q73p")
 
@@ -376,7 +407,7 @@ offset_right = 1105.0
 offset_bottom = 646.0
 tooltip_text = "LEVEL 7"
 disabled = true
-texture_normal = ExtResource("10_3o52v")
+texture_normal = ExtResource("25_0d0lh")
 stretch_mode = 0
 script = ExtResource("4_1q73p")
 
@@ -390,7 +421,7 @@ offset_right = 887.0
 offset_bottom = 307.0
 tooltip_text = "LEVEL 8"
 disabled = true
-texture_normal = ExtResource("11_0fiia")
+texture_normal = ExtResource("26_3dt5p")
 stretch_mode = 0
 script = ExtResource("4_1q73p")
 
@@ -404,7 +435,7 @@ offset_right = 1164.0
 offset_bottom = 442.0
 tooltip_text = "LEVEL 9"
 disabled = true
-texture_normal = ExtResource("12_0ffed")
+texture_normal = ExtResource("27_y704u")
 stretch_mode = 0
 script = ExtResource("4_1q73p")
 
@@ -418,7 +449,7 @@ offset_right = 1257.0
 offset_bottom = 209.0
 tooltip_text = "LEVEL 10"
 disabled = true
-texture_normal = ExtResource("13_c6u0j")
+texture_normal = ExtResource("28_nqvme")
 stretch_mode = 0
 script = ExtResource("4_1q73p")
 
@@ -919,12 +950,12 @@ offset_bottom = 124.0
 theme_override_font_sizes/font_size = 36
 text = "WORLD 1 - THE BEGINNING"
 
+[connection signal="pressed" from="HBoxContainer/PreviousWorldBtn" to="." method="_on_previous_world_btn_pressed"]
+[connection signal="pressed" from="HBoxContainer/NextWorldBtn" to="." method="_on_next_world_btn_pressed"]
 [connection signal="pressed" from="World1Map/LevelButtons/LevelBtn1" to="World1Map/LevelButtons/LevelBtn1" method="_on_pressed"]
 [connection signal="pressed" from="World1Map/LevelButtons/LevelBtn2" to="World1Map/LevelButtons/LevelBtn1" method="_on_level_btn_2_pressed"]
 [connection signal="pressed" from="World1Map/LevelButtons/LevelBtn3" to="World1Map/LevelButtons/LevelBtn1" method="_on_level_btn_3_pressed"]
 [connection signal="pressed" from="World1Map/LevelButtons/LevelBtn4" to="World1Map/LevelButtons/LevelBtn1" method="_on_level_btn_4_pressed"]
-[connection signal="pressed" from="HBoxContainer/PreviousWorldBtn" to="." method="_on_previous_world_btn_pressed"]
-[connection signal="pressed" from="HBoxContainer/NextWorldBtn" to="." method="_on_next_world_btn_pressed"]
 [connection signal="pressed" from="World2Map/LevelButtons/LevelBtn1" to="World2Map/LevelButtons/LevelBtn1" method="_on_pressed"]
 [connection signal="pressed" from="World2Map/LevelButtons/LevelBtn2" to="World2Map/LevelButtons/LevelBtn1" method="_on_level_btn_2_pressed"]
 [connection signal="pressed" from="World2Map/LevelButtons/LevelBtn3" to="World2Map/LevelButtons/LevelBtn1" method="_on_level_btn_3_pressed"]
