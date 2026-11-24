@@ -1,10 +1,16 @@
 [gd_scene format=3 uid="uid://bmtwd7fadlglc"]
 
 [ext_resource type="Script" uid="uid://rf7ygqij4q0m" path="res://Scenes/menu/level_select.gd" id="1_1q73p"]
+[ext_resource type="Texture2D" uid="uid://cxdeqetal6ojy" path="res://Assets/Background/1.png" id="2_np1q4"]
+[ext_resource type="Texture2D" uid="uid://bynnfmsoay765" path="res://Assets/Background/2.png" id="3_6iy6y"]
 [ext_resource type="Texture2D" uid="uid://ckracc2aabhaf" path="res://Assets/Menu/Levels/01.png" id="3_650x2"]
 [ext_resource type="Script" uid="uid://dai0vtjoc0lfv" path="res://Scenes/menu/level_1_btn.gd" id="4_1q73p"]
+[ext_resource type="Texture2D" uid="uid://b1wm2ihn8fx6" path="res://Assets/Background/3.png" id="4_5tgk1"]
 [ext_resource type="Texture2D" uid="uid://c3tklax1kj1wu" path="res://Assets/Menu/Levels/02.png" id="5_ty75k"]
+[ext_resource type="Texture2D" uid="uid://bihjp6gostg24" path="res://Assets/Background/4.png" id="5_ytj60"]
+[ext_resource type="Texture2D" uid="uid://xmuay3btekbq" path="res://Assets/Background/5.png" id="6_3o52v"]
 [ext_resource type="Texture2D" uid="uid://bbavjd42068nn" path="res://Assets/Menu/Levels/03.png" id="6_np1q4"]
+[ext_resource type="Texture2D" uid="uid://dug00aknhck1w" path="res://Assets/Background/6.png" id="7_0fiia"]
 [ext_resource type="Texture2D" uid="uid://dcreik31a77vl" path="res://Assets/Menu/Levels/04.png" id="7_6iy6y"]
 [ext_resource type="Texture2D" uid="uid://ds8le5wakep7c" path="res://Assets/Menu/Levels/05.png" id="8_5tgk1"]
 [ext_resource type="Texture2D" uid="uid://04ij0yvsq0mi" path="res://Assets/Menu/Levels/06.png" id="9_ytj60"]
@@ -22,6 +28,45 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_1q73p")
 
+[node name="WorldBackground" type="Parallax2D" parent="." unique_id=412646240]
+scroll_offset = Vector2(258, 239)
+
+[node name="Layer1" type="Sprite2D" parent="WorldBackground" unique_id=479054841]
+texture_filter = 1
+position = Vector2(387.00006, 118.000015)
+scale = Vector2(2.119355, 2.0722222)
+texture = ExtResource("2_np1q4")
+
+[node name="Layer2" type="Sprite2D" parent="WorldBackground" unique_id=792219808]
+texture_filter = 1
+position = Vector2(396.50006, 105.5)
+scale = Vector2(2.1145163, 2.0305555)
+texture = ExtResource("3_6iy6y")
+
+[node name="Layer3" type="Sprite2D" parent="WorldBackground" unique_id=551633801]
+texture_filter = 1
+position = Vector2(388.00006, 108.49999)
+scale = Vector2(2.1032257, 2.075)
+texture = ExtResource("4_5tgk1")
+
+[node name="Layer4" type="Sprite2D" parent="WorldBackground" unique_id=1653008912]
+texture_filter = 1
+position = Vector2(383.5, 103)
+scale = Vector2(2.1274192, 1.9833333)
+texture = ExtResource("5_ytj60")
+
+[node name="Layer5" type="Sprite2D" parent="WorldBackground" unique_id=890901849]
+texture_filter = 1
+position = Vector2(405.0001, 107.000015)
+scale = Vector2(2.0935485, 2.0555556)
+texture = ExtResource("6_3o52v")
+
+[node name="Layer6" type="Sprite2D" parent="WorldBackground" unique_id=1556557330]
+texture_filter = 1
+position = Vector2(384.0001, 105.499985)
+scale = Vector2(2.1000001, 2.0138888)
+texture = ExtResource("7_0fiia")
+
 [node name="Background" type="TextureRect" parent="." unique_id=544275310]
 texture_filter = 1
 layout_mode = 1
@@ -32,9 +77,9 @@ grow_horizontal = 2
 grow_vertical = 2
 stretch_mode = 1
 
-[node name="MapPath" type="Node2D" parent="." unique_id=1701720417]
+[node name="World1Map" type="Node2D" parent="." unique_id=1701720417]
 
-[node name="PathLine" type="Line2D" parent="MapPath" unique_id=1943148161]
+[node name="PathLine" type="Line2D" parent="World1Map" unique_id=1943148161]
 position = Vector2(26, 3)
 points = PackedVector2Array(74, 526, 241, 260, 354, 605, 467, 428, 731, 631, 655, 408, 1042, 603, 824, 260, 1100, 400, 1188, 160)
 default_color = Color(0.016842017, 0.006297972, 0.05945588, 1)
@@ -42,13 +87,13 @@ joint_mode = 2
 begin_cap_mode = 2
 end_cap_mode = 2
 
-[node name="LevelButtons" type="Control" parent="MapPath" unique_id=149221230]
+[node name="LevelButtons" type="Control" parent="World1Map" unique_id=149221230]
 layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
 
-[node name="LevelBtn1" type="TextureButton" parent="MapPath/LevelButtons" unique_id=30335650]
+[node name="LevelBtn1" type="TextureButton" parent="World1Map/LevelButtons" unique_id=30335650]
 texture_filter = 1
 layout_mode = 0
 offset_left = 60.0
@@ -60,7 +105,7 @@ texture_normal = ExtResource("3_650x2")
 stretch_mode = 0
 script = ExtResource("4_1q73p")
 
-[node name="LevelBtn2" type="TextureButton" parent="MapPath/LevelButtons" unique_id=1119337929]
+[node name="LevelBtn2" type="TextureButton" parent="World1Map/LevelButtons" unique_id=1119337929]
 modulate = Color(0.36282945, 0.36282945, 0.36282945, 1)
 texture_filter = 1
 layout_mode = 0
@@ -74,7 +119,7 @@ texture_normal = ExtResource("5_ty75k")
 stretch_mode = 0
 script = ExtResource("4_1q73p")
 
-[node name="LevelBtn3" type="TextureButton" parent="MapPath/LevelButtons" unique_id=893883820]
+[node name="LevelBtn3" type="TextureButton" parent="World1Map/LevelButtons" unique_id=893883820]
 modulate = Color(0.32915837, 0.3291584, 0.3291584, 1)
 texture_filter = 1
 layout_mode = 0
@@ -88,7 +133,7 @@ texture_normal = ExtResource("6_np1q4")
 stretch_mode = 0
 script = ExtResource("4_1q73p")
 
-[node name="LevelBtn4" type="TextureButton" parent="MapPath/LevelButtons" unique_id=506989435]
+[node name="LevelBtn4" type="TextureButton" parent="World1Map/LevelButtons" unique_id=506989435]
 modulate = Color(0.32941177, 0.32941177, 0.32941177, 1)
 texture_filter = 1
 layout_mode = 0
@@ -102,7 +147,7 @@ texture_normal = ExtResource("7_6iy6y")
 stretch_mode = 0
 script = ExtResource("4_1q73p")
 
-[node name="LevelBtn5" type="TextureButton" parent="MapPath/LevelButtons" unique_id=1845533137]
+[node name="LevelBtn5" type="TextureButton" parent="World1Map/LevelButtons" unique_id=1845533137]
 modulate = Color(0.32941177, 0.32941177, 0.32941177, 1)
 texture_filter = 1
 layout_mode = 0
@@ -116,7 +161,7 @@ texture_normal = ExtResource("8_5tgk1")
 stretch_mode = 0
 script = ExtResource("4_1q73p")
 
-[node name="LevelBtn6" type="TextureButton" parent="MapPath/LevelButtons" unique_id=1046949596]
+[node name="LevelBtn6" type="TextureButton" parent="World1Map/LevelButtons" unique_id=1046949596]
 modulate = Color(0.32941177, 0.32941177, 0.32941177, 1)
 texture_filter = 1
 layout_mode = 0
@@ -130,7 +175,7 @@ texture_normal = ExtResource("9_ytj60")
 stretch_mode = 0
 script = ExtResource("4_1q73p")
 
-[node name="LevelBtn7" type="TextureButton" parent="MapPath/LevelButtons" unique_id=1077902149]
+[node name="LevelBtn7" type="TextureButton" parent="World1Map/LevelButtons" unique_id=1077902149]
 modulate = Color(0.32941177, 0.32941177, 0.32941177, 1)
 texture_filter = 1
 layout_mode = 0
@@ -144,7 +189,7 @@ texture_normal = ExtResource("10_3o52v")
 stretch_mode = 0
 script = ExtResource("4_1q73p")
 
-[node name="LevelBtn8" type="TextureButton" parent="MapPath/LevelButtons" unique_id=1216844434]
+[node name="LevelBtn8" type="TextureButton" parent="World1Map/LevelButtons" unique_id=1216844434]
 modulate = Color(0.32941177, 0.32941177, 0.32941177, 1)
 texture_filter = 1
 layout_mode = 0
@@ -158,7 +203,7 @@ texture_normal = ExtResource("11_0fiia")
 stretch_mode = 0
 script = ExtResource("4_1q73p")
 
-[node name="LevelBtn9" type="TextureButton" parent="MapPath/LevelButtons" unique_id=63773460]
+[node name="LevelBtn9" type="TextureButton" parent="World1Map/LevelButtons" unique_id=63773460]
 modulate = Color(0.32941177, 0.32941177, 0.32941177, 1)
 texture_filter = 1
 layout_mode = 0
@@ -172,7 +217,7 @@ texture_normal = ExtResource("12_0ffed")
 stretch_mode = 0
 script = ExtResource("4_1q73p")
 
-[node name="LevelBtn10" type="TextureButton" parent="MapPath/LevelButtons" unique_id=1266326670]
+[node name="LevelBtn10" type="TextureButton" parent="World1Map/LevelButtons" unique_id=1266326670]
 modulate = Color(0.32941177, 0.32941177, 0.32941177, 1)
 texture_filter = 1
 layout_mode = 0
@@ -186,8 +231,7 @@ texture_normal = ExtResource("13_c6u0j")
 stretch_mode = 0
 script = ExtResource("4_1q73p")
 
-[node name="WorldTitle" type="Label" parent="." unique_id=1620728069]
-layout_mode = 0
+[node name="WorldTitle" type="Label" parent="World1Map" unique_id=1620728069]
 offset_left = 373.0
 offset_top = 74.0
 offset_right = 844.0
@@ -223,9 +267,677 @@ layout_mode = 2
 theme_override_font_sizes/font_size = 36
 text = ">"
 
-[connection signal="pressed" from="MapPath/LevelButtons/LevelBtn1" to="MapPath/LevelButtons/LevelBtn1" method="_on_pressed"]
-[connection signal="pressed" from="MapPath/LevelButtons/LevelBtn2" to="MapPath/LevelButtons/LevelBtn1" method="_on_level_btn_2_pressed"]
-[connection signal="pressed" from="MapPath/LevelButtons/LevelBtn3" to="MapPath/LevelButtons/LevelBtn1" method="_on_level_btn_3_pressed"]
-[connection signal="pressed" from="MapPath/LevelButtons/LevelBtn4" to="MapPath/LevelButtons/LevelBtn1" method="_on_level_btn_4_pressed"]
+[node name="World2Map" type="Node2D" parent="." unique_id=158411963]
+visible = false
+
+[node name="PathLine" type="Line2D" parent="World2Map" unique_id=687464357]
+position = Vector2(26, 3)
+points = PackedVector2Array(74, 526, 241, 260, 354, 605, 467, 428, 731, 631, 655, 408, 1042, 603, 824, 260, 1100, 400, 1188, 160)
+default_color = Color(0.016842017, 0.006297972, 0.05945588, 1)
+joint_mode = 2
+begin_cap_mode = 2
+end_cap_mode = 2
+
+[node name="LevelButtons" type="Control" parent="World2Map" unique_id=314412477]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="LevelBtn1" type="TextureButton" parent="World2Map/LevelButtons" unique_id=2146251767]
+texture_filter = 1
+layout_mode = 0
+offset_left = 60.0
+offset_top = 488.0
+offset_right = 140.0
+offset_bottom = 568.0
+tooltip_text = "LEVEL 1"
+texture_normal = ExtResource("3_650x2")
+stretch_mode = 0
+script = ExtResource("4_1q73p")
+
+[node name="LevelBtn2" type="TextureButton" parent="World2Map/LevelButtons" unique_id=1730917946]
+modulate = Color(0.36282945, 0.36282945, 0.36282945, 1)
+texture_filter = 1
+layout_mode = 0
+offset_left = 224.0
+offset_top = 234.0
+offset_right = 304.0
+offset_bottom = 314.0
+tooltip_text = "LEVEL 2"
+disabled = true
+texture_normal = ExtResource("5_ty75k")
+stretch_mode = 0
+script = ExtResource("4_1q73p")
+
+[node name="LevelBtn3" type="TextureButton" parent="World2Map/LevelButtons" unique_id=320841222]
+modulate = Color(0.32915837, 0.3291584, 0.3291584, 1)
+texture_filter = 1
+layout_mode = 0
+offset_left = 337.0
+offset_top = 564.0
+offset_right = 417.0
+offset_bottom = 644.0
+tooltip_text = "LEVEL 3"
+disabled = true
+texture_normal = ExtResource("6_np1q4")
+stretch_mode = 0
+script = ExtResource("4_1q73p")
+
+[node name="LevelBtn4" type="TextureButton" parent="World2Map/LevelButtons" unique_id=1446171654]
+modulate = Color(0.32941177, 0.32941177, 0.32941177, 1)
+texture_filter = 1
+layout_mode = 0
+offset_left = 451.0
+offset_top = 394.0
+offset_right = 531.0
+offset_bottom = 474.0
+tooltip_text = "LEVEL 4"
+disabled = true
+texture_normal = ExtResource("7_6iy6y")
+stretch_mode = 0
+script = ExtResource("4_1q73p")
+
+[node name="LevelBtn5" type="TextureButton" parent="World2Map/LevelButtons" unique_id=1286494357]
+modulate = Color(0.32941177, 0.32941177, 0.32941177, 1)
+texture_filter = 1
+layout_mode = 0
+offset_left = 714.0
+offset_top = 593.0
+offset_right = 794.0
+offset_bottom = 673.0
+tooltip_text = "LEVEL 5"
+disabled = true
+texture_normal = ExtResource("8_5tgk1")
+stretch_mode = 0
+script = ExtResource("4_1q73p")
+
+[node name="LevelBtn6" type="TextureButton" parent="World2Map/LevelButtons" unique_id=640018191]
+modulate = Color(0.32941177, 0.32941177, 0.32941177, 1)
+texture_filter = 1
+layout_mode = 0
+offset_left = 638.0
+offset_top = 370.0
+offset_right = 718.0
+offset_bottom = 450.0
+tooltip_text = "LEVEL 6"
+disabled = true
+texture_normal = ExtResource("9_ytj60")
+stretch_mode = 0
+script = ExtResource("4_1q73p")
+
+[node name="LevelBtn7" type="TextureButton" parent="World2Map/LevelButtons" unique_id=1156993131]
+modulate = Color(0.32941177, 0.32941177, 0.32941177, 1)
+texture_filter = 1
+layout_mode = 0
+offset_left = 1025.0
+offset_top = 566.0
+offset_right = 1105.0
+offset_bottom = 646.0
+tooltip_text = "LEVEL 7"
+disabled = true
+texture_normal = ExtResource("10_3o52v")
+stretch_mode = 0
+script = ExtResource("4_1q73p")
+
+[node name="LevelBtn8" type="TextureButton" parent="World2Map/LevelButtons" unique_id=1382404097]
+modulate = Color(0.32941177, 0.32941177, 0.32941177, 1)
+texture_filter = 1
+layout_mode = 0
+offset_left = 807.0
+offset_top = 227.0
+offset_right = 887.0
+offset_bottom = 307.0
+tooltip_text = "LEVEL 8"
+disabled = true
+texture_normal = ExtResource("11_0fiia")
+stretch_mode = 0
+script = ExtResource("4_1q73p")
+
+[node name="LevelBtn9" type="TextureButton" parent="World2Map/LevelButtons" unique_id=463225210]
+modulate = Color(0.32941177, 0.32941177, 0.32941177, 1)
+texture_filter = 1
+layout_mode = 0
+offset_left = 1084.0
+offset_top = 362.0
+offset_right = 1164.0
+offset_bottom = 442.0
+tooltip_text = "LEVEL 9"
+disabled = true
+texture_normal = ExtResource("12_0ffed")
+stretch_mode = 0
+script = ExtResource("4_1q73p")
+
+[node name="LevelBtn10" type="TextureButton" parent="World2Map/LevelButtons" unique_id=1550010495]
+modulate = Color(0.32941177, 0.32941177, 0.32941177, 1)
+texture_filter = 1
+layout_mode = 0
+offset_left = 1177.0
+offset_top = 129.0
+offset_right = 1257.0
+offset_bottom = 209.0
+tooltip_text = "LEVEL 10"
+disabled = true
+texture_normal = ExtResource("13_c6u0j")
+stretch_mode = 0
+script = ExtResource("4_1q73p")
+
+[node name="WorldTitle" type="Label" parent="World2Map" unique_id=138894295]
+offset_left = 373.0
+offset_top = 74.0
+offset_right = 844.0
+offset_bottom = 124.0
+theme_override_font_sizes/font_size = 36
+text = "WORLD 1 - THE BEGINNING"
+
+[node name="World3Map" type="Node2D" parent="." unique_id=1153838544]
+visible = false
+
+[node name="PathLine" type="Line2D" parent="World3Map" unique_id=215374455]
+position = Vector2(26, 3)
+points = PackedVector2Array(74, 526, 241, 260, 354, 605, 467, 428, 731, 631, 655, 408, 1042, 603, 824, 260, 1100, 400, 1188, 160)
+default_color = Color(0.016842017, 0.006297972, 0.05945588, 1)
+joint_mode = 2
+begin_cap_mode = 2
+end_cap_mode = 2
+
+[node name="LevelButtons" type="Control" parent="World3Map" unique_id=1771117026]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="LevelBtn1" type="TextureButton" parent="World3Map/LevelButtons" unique_id=715441031]
+texture_filter = 1
+layout_mode = 0
+offset_left = 60.0
+offset_top = 488.0
+offset_right = 140.0
+offset_bottom = 568.0
+tooltip_text = "LEVEL 1"
+texture_normal = ExtResource("3_650x2")
+stretch_mode = 0
+script = ExtResource("4_1q73p")
+
+[node name="LevelBtn2" type="TextureButton" parent="World3Map/LevelButtons" unique_id=1230486127]
+modulate = Color(0.36282945, 0.36282945, 0.36282945, 1)
+texture_filter = 1
+layout_mode = 0
+offset_left = 224.0
+offset_top = 234.0
+offset_right = 304.0
+offset_bottom = 314.0
+tooltip_text = "LEVEL 2"
+disabled = true
+texture_normal = ExtResource("5_ty75k")
+stretch_mode = 0
+script = ExtResource("4_1q73p")
+
+[node name="LevelBtn3" type="TextureButton" parent="World3Map/LevelButtons" unique_id=457799985]
+modulate = Color(0.32915837, 0.3291584, 0.3291584, 1)
+texture_filter = 1
+layout_mode = 0
+offset_left = 337.0
+offset_top = 564.0
+offset_right = 417.0
+offset_bottom = 644.0
+tooltip_text = "LEVEL 3"
+disabled = true
+texture_normal = ExtResource("6_np1q4")
+stretch_mode = 0
+script = ExtResource("4_1q73p")
+
+[node name="LevelBtn4" type="TextureButton" parent="World3Map/LevelButtons" unique_id=1333246237]
+modulate = Color(0.32941177, 0.32941177, 0.32941177, 1)
+texture_filter = 1
+layout_mode = 0
+offset_left = 451.0
+offset_top = 394.0
+offset_right = 531.0
+offset_bottom = 474.0
+tooltip_text = "LEVEL 4"
+disabled = true
+texture_normal = ExtResource("7_6iy6y")
+stretch_mode = 0
+script = ExtResource("4_1q73p")
+
+[node name="LevelBtn5" type="TextureButton" parent="World3Map/LevelButtons" unique_id=1014771559]
+modulate = Color(0.32941177, 0.32941177, 0.32941177, 1)
+texture_filter = 1
+layout_mode = 0
+offset_left = 714.0
+offset_top = 593.0
+offset_right = 794.0
+offset_bottom = 673.0
+tooltip_text = "LEVEL 5"
+disabled = true
+texture_normal = ExtResource("8_5tgk1")
+stretch_mode = 0
+script = ExtResource("4_1q73p")
+
+[node name="LevelBtn6" type="TextureButton" parent="World3Map/LevelButtons" unique_id=1035423788]
+modulate = Color(0.32941177, 0.32941177, 0.32941177, 1)
+texture_filter = 1
+layout_mode = 0
+offset_left = 638.0
+offset_top = 370.0
+offset_right = 718.0
+offset_bottom = 450.0
+tooltip_text = "LEVEL 6"
+disabled = true
+texture_normal = ExtResource("9_ytj60")
+stretch_mode = 0
+script = ExtResource("4_1q73p")
+
+[node name="LevelBtn7" type="TextureButton" parent="World3Map/LevelButtons" unique_id=1053548705]
+modulate = Color(0.32941177, 0.32941177, 0.32941177, 1)
+texture_filter = 1
+layout_mode = 0
+offset_left = 1025.0
+offset_top = 566.0
+offset_right = 1105.0
+offset_bottom = 646.0
+tooltip_text = "LEVEL 7"
+disabled = true
+texture_normal = ExtResource("10_3o52v")
+stretch_mode = 0
+script = ExtResource("4_1q73p")
+
+[node name="LevelBtn8" type="TextureButton" parent="World3Map/LevelButtons" unique_id=1115391663]
+modulate = Color(0.32941177, 0.32941177, 0.32941177, 1)
+texture_filter = 1
+layout_mode = 0
+offset_left = 807.0
+offset_top = 227.0
+offset_right = 887.0
+offset_bottom = 307.0
+tooltip_text = "LEVEL 8"
+disabled = true
+texture_normal = ExtResource("11_0fiia")
+stretch_mode = 0
+script = ExtResource("4_1q73p")
+
+[node name="LevelBtn9" type="TextureButton" parent="World3Map/LevelButtons" unique_id=1478635955]
+modulate = Color(0.32941177, 0.32941177, 0.32941177, 1)
+texture_filter = 1
+layout_mode = 0
+offset_left = 1084.0
+offset_top = 362.0
+offset_right = 1164.0
+offset_bottom = 442.0
+tooltip_text = "LEVEL 9"
+disabled = true
+texture_normal = ExtResource("12_0ffed")
+stretch_mode = 0
+script = ExtResource("4_1q73p")
+
+[node name="LevelBtn10" type="TextureButton" parent="World3Map/LevelButtons" unique_id=1860665167]
+modulate = Color(0.32941177, 0.32941177, 0.32941177, 1)
+texture_filter = 1
+layout_mode = 0
+offset_left = 1177.0
+offset_top = 129.0
+offset_right = 1257.0
+offset_bottom = 209.0
+tooltip_text = "LEVEL 10"
+disabled = true
+texture_normal = ExtResource("13_c6u0j")
+stretch_mode = 0
+script = ExtResource("4_1q73p")
+
+[node name="WorldTitle" type="Label" parent="World3Map" unique_id=213801556]
+offset_left = 373.0
+offset_top = 74.0
+offset_right = 844.0
+offset_bottom = 124.0
+theme_override_font_sizes/font_size = 36
+text = "WORLD 1 - THE BEGINNING"
+
+[node name="World4Map" type="Node2D" parent="." unique_id=1235263277]
+visible = false
+
+[node name="PathLine" type="Line2D" parent="World4Map" unique_id=853784727]
+position = Vector2(26, 3)
+points = PackedVector2Array(74, 526, 241, 260, 354, 605, 467, 428, 731, 631, 655, 408, 1042, 603, 824, 260, 1100, 400, 1188, 160)
+default_color = Color(0.016842017, 0.006297972, 0.05945588, 1)
+joint_mode = 2
+begin_cap_mode = 2
+end_cap_mode = 2
+
+[node name="LevelButtons" type="Control" parent="World4Map" unique_id=1560014451]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="LevelBtn1" type="TextureButton" parent="World4Map/LevelButtons" unique_id=1458331276]
+texture_filter = 1
+layout_mode = 0
+offset_left = 60.0
+offset_top = 488.0
+offset_right = 140.0
+offset_bottom = 568.0
+tooltip_text = "LEVEL 1"
+texture_normal = ExtResource("3_650x2")
+stretch_mode = 0
+script = ExtResource("4_1q73p")
+
+[node name="LevelBtn2" type="TextureButton" parent="World4Map/LevelButtons" unique_id=2132283057]
+modulate = Color(0.36282945, 0.36282945, 0.36282945, 1)
+texture_filter = 1
+layout_mode = 0
+offset_left = 224.0
+offset_top = 234.0
+offset_right = 304.0
+offset_bottom = 314.0
+tooltip_text = "LEVEL 2"
+disabled = true
+texture_normal = ExtResource("5_ty75k")
+stretch_mode = 0
+script = ExtResource("4_1q73p")
+
+[node name="LevelBtn3" type="TextureButton" parent="World4Map/LevelButtons" unique_id=1397930759]
+modulate = Color(0.32915837, 0.3291584, 0.3291584, 1)
+texture_filter = 1
+layout_mode = 0
+offset_left = 337.0
+offset_top = 564.0
+offset_right = 417.0
+offset_bottom = 644.0
+tooltip_text = "LEVEL 3"
+disabled = true
+texture_normal = ExtResource("6_np1q4")
+stretch_mode = 0
+script = ExtResource("4_1q73p")
+
+[node name="LevelBtn4" type="TextureButton" parent="World4Map/LevelButtons" unique_id=1368250552]
+modulate = Color(0.32941177, 0.32941177, 0.32941177, 1)
+texture_filter = 1
+layout_mode = 0
+offset_left = 451.0
+offset_top = 394.0
+offset_right = 531.0
+offset_bottom = 474.0
+tooltip_text = "LEVEL 4"
+disabled = true
+texture_normal = ExtResource("7_6iy6y")
+stretch_mode = 0
+script = ExtResource("4_1q73p")
+
+[node name="LevelBtn5" type="TextureButton" parent="World4Map/LevelButtons" unique_id=2032692670]
+modulate = Color(0.32941177, 0.32941177, 0.32941177, 1)
+texture_filter = 1
+layout_mode = 0
+offset_left = 714.0
+offset_top = 593.0
+offset_right = 794.0
+offset_bottom = 673.0
+tooltip_text = "LEVEL 5"
+disabled = true
+texture_normal = ExtResource("8_5tgk1")
+stretch_mode = 0
+script = ExtResource("4_1q73p")
+
+[node name="LevelBtn6" type="TextureButton" parent="World4Map/LevelButtons" unique_id=839526153]
+modulate = Color(0.32941177, 0.32941177, 0.32941177, 1)
+texture_filter = 1
+layout_mode = 0
+offset_left = 638.0
+offset_top = 370.0
+offset_right = 718.0
+offset_bottom = 450.0
+tooltip_text = "LEVEL 6"
+disabled = true
+texture_normal = ExtResource("9_ytj60")
+stretch_mode = 0
+script = ExtResource("4_1q73p")
+
+[node name="LevelBtn7" type="TextureButton" parent="World4Map/LevelButtons" unique_id=1554646337]
+modulate = Color(0.32941177, 0.32941177, 0.32941177, 1)
+texture_filter = 1
+layout_mode = 0
+offset_left = 1025.0
+offset_top = 566.0
+offset_right = 1105.0
+offset_bottom = 646.0
+tooltip_text = "LEVEL 7"
+disabled = true
+texture_normal = ExtResource("10_3o52v")
+stretch_mode = 0
+script = ExtResource("4_1q73p")
+
+[node name="LevelBtn8" type="TextureButton" parent="World4Map/LevelButtons" unique_id=794294835]
+modulate = Color(0.32941177, 0.32941177, 0.32941177, 1)
+texture_filter = 1
+layout_mode = 0
+offset_left = 807.0
+offset_top = 227.0
+offset_right = 887.0
+offset_bottom = 307.0
+tooltip_text = "LEVEL 8"
+disabled = true
+texture_normal = ExtResource("11_0fiia")
+stretch_mode = 0
+script = ExtResource("4_1q73p")
+
+[node name="LevelBtn9" type="TextureButton" parent="World4Map/LevelButtons" unique_id=909129369]
+modulate = Color(0.32941177, 0.32941177, 0.32941177, 1)
+texture_filter = 1
+layout_mode = 0
+offset_left = 1084.0
+offset_top = 362.0
+offset_right = 1164.0
+offset_bottom = 442.0
+tooltip_text = "LEVEL 9"
+disabled = true
+texture_normal = ExtResource("12_0ffed")
+stretch_mode = 0
+script = ExtResource("4_1q73p")
+
+[node name="LevelBtn10" type="TextureButton" parent="World4Map/LevelButtons" unique_id=383868955]
+modulate = Color(0.32941177, 0.32941177, 0.32941177, 1)
+texture_filter = 1
+layout_mode = 0
+offset_left = 1177.0
+offset_top = 129.0
+offset_right = 1257.0
+offset_bottom = 209.0
+tooltip_text = "LEVEL 10"
+disabled = true
+texture_normal = ExtResource("13_c6u0j")
+stretch_mode = 0
+script = ExtResource("4_1q73p")
+
+[node name="WorldTitle" type="Label" parent="World4Map" unique_id=1906998921]
+offset_left = 373.0
+offset_top = 74.0
+offset_right = 844.0
+offset_bottom = 124.0
+theme_override_font_sizes/font_size = 36
+text = "WORLD 1 - THE BEGINNING"
+
+[node name="World5Map" type="Node2D" parent="." unique_id=1653777103]
+visible = false
+
+[node name="PathLine" type="Line2D" parent="World5Map" unique_id=980315895]
+position = Vector2(26, 3)
+points = PackedVector2Array(74, 526, 241, 260, 354, 605, 467, 428, 731, 631, 655, 408, 1042, 603, 824, 260, 1100, 400, 1188, 160)
+default_color = Color(0.016842017, 0.006297972, 0.05945588, 1)
+joint_mode = 2
+begin_cap_mode = 2
+end_cap_mode = 2
+
+[node name="LevelButtons" type="Control" parent="World5Map" unique_id=518653661]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="LevelBtn1" type="TextureButton" parent="World5Map/LevelButtons" unique_id=1083733117]
+texture_filter = 1
+layout_mode = 0
+offset_left = 60.0
+offset_top = 488.0
+offset_right = 140.0
+offset_bottom = 568.0
+tooltip_text = "LEVEL 1"
+texture_normal = ExtResource("3_650x2")
+stretch_mode = 0
+script = ExtResource("4_1q73p")
+
+[node name="LevelBtn2" type="TextureButton" parent="World5Map/LevelButtons" unique_id=472011939]
+modulate = Color(0.36282945, 0.36282945, 0.36282945, 1)
+texture_filter = 1
+layout_mode = 0
+offset_left = 224.0
+offset_top = 234.0
+offset_right = 304.0
+offset_bottom = 314.0
+tooltip_text = "LEVEL 2"
+disabled = true
+texture_normal = ExtResource("5_ty75k")
+stretch_mode = 0
+script = ExtResource("4_1q73p")
+
+[node name="LevelBtn3" type="TextureButton" parent="World5Map/LevelButtons" unique_id=1448400729]
+modulate = Color(0.32915837, 0.3291584, 0.3291584, 1)
+texture_filter = 1
+layout_mode = 0
+offset_left = 337.0
+offset_top = 564.0
+offset_right = 417.0
+offset_bottom = 644.0
+tooltip_text = "LEVEL 3"
+disabled = true
+texture_normal = ExtResource("6_np1q4")
+stretch_mode = 0
+script = ExtResource("4_1q73p")
+
+[node name="LevelBtn4" type="TextureButton" parent="World5Map/LevelButtons" unique_id=226261102]
+modulate = Color(0.32941177, 0.32941177, 0.32941177, 1)
+texture_filter = 1
+layout_mode = 0
+offset_left = 451.0
+offset_top = 394.0
+offset_right = 531.0
+offset_bottom = 474.0
+tooltip_text = "LEVEL 4"
+disabled = true
+texture_normal = ExtResource("7_6iy6y")
+stretch_mode = 0
+script = ExtResource("4_1q73p")
+
+[node name="LevelBtn5" type="TextureButton" parent="World5Map/LevelButtons" unique_id=1722975843]
+modulate = Color(0.32941177, 0.32941177, 0.32941177, 1)
+texture_filter = 1
+layout_mode = 0
+offset_left = 714.0
+offset_top = 593.0
+offset_right = 794.0
+offset_bottom = 673.0
+tooltip_text = "LEVEL 5"
+disabled = true
+texture_normal = ExtResource("8_5tgk1")
+stretch_mode = 0
+script = ExtResource("4_1q73p")
+
+[node name="LevelBtn6" type="TextureButton" parent="World5Map/LevelButtons" unique_id=1516818469]
+modulate = Color(0.32941177, 0.32941177, 0.32941177, 1)
+texture_filter = 1
+layout_mode = 0
+offset_left = 638.0
+offset_top = 370.0
+offset_right = 718.0
+offset_bottom = 450.0
+tooltip_text = "LEVEL 6"
+disabled = true
+texture_normal = ExtResource("9_ytj60")
+stretch_mode = 0
+script = ExtResource("4_1q73p")
+
+[node name="LevelBtn7" type="TextureButton" parent="World5Map/LevelButtons" unique_id=1110415620]
+modulate = Color(0.32941177, 0.32941177, 0.32941177, 1)
+texture_filter = 1
+layout_mode = 0
+offset_left = 1025.0
+offset_top = 566.0
+offset_right = 1105.0
+offset_bottom = 646.0
+tooltip_text = "LEVEL 7"
+disabled = true
+texture_normal = ExtResource("10_3o52v")
+stretch_mode = 0
+script = ExtResource("4_1q73p")
+
+[node name="LevelBtn8" type="TextureButton" parent="World5Map/LevelButtons" unique_id=1527900331]
+modulate = Color(0.32941177, 0.32941177, 0.32941177, 1)
+texture_filter = 1
+layout_mode = 0
+offset_left = 807.0
+offset_top = 227.0
+offset_right = 887.0
+offset_bottom = 307.0
+tooltip_text = "LEVEL 8"
+disabled = true
+texture_normal = ExtResource("11_0fiia")
+stretch_mode = 0
+script = ExtResource("4_1q73p")
+
+[node name="LevelBtn9" type="TextureButton" parent="World5Map/LevelButtons" unique_id=777516570]
+modulate = Color(0.32941177, 0.32941177, 0.32941177, 1)
+texture_filter = 1
+layout_mode = 0
+offset_left = 1084.0
+offset_top = 362.0
+offset_right = 1164.0
+offset_bottom = 442.0
+tooltip_text = "LEVEL 9"
+disabled = true
+texture_normal = ExtResource("12_0ffed")
+stretch_mode = 0
+script = ExtResource("4_1q73p")
+
+[node name="LevelBtn10" type="TextureButton" parent="World5Map/LevelButtons" unique_id=413782826]
+modulate = Color(0.32941177, 0.32941177, 0.32941177, 1)
+texture_filter = 1
+layout_mode = 0
+offset_left = 1177.0
+offset_top = 129.0
+offset_right = 1257.0
+offset_bottom = 209.0
+tooltip_text = "LEVEL 10"
+disabled = true
+texture_normal = ExtResource("13_c6u0j")
+stretch_mode = 0
+script = ExtResource("4_1q73p")
+
+[node name="WorldTitle" type="Label" parent="World5Map" unique_id=1927404025]
+offset_left = 373.0
+offset_top = 74.0
+offset_right = 844.0
+offset_bottom = 124.0
+theme_override_font_sizes/font_size = 36
+text = "WORLD 1 - THE BEGINNING"
+
+[connection signal="pressed" from="World1Map/LevelButtons/LevelBtn1" to="World1Map/LevelButtons/LevelBtn1" method="_on_pressed"]
+[connection signal="pressed" from="World1Map/LevelButtons/LevelBtn2" to="World1Map/LevelButtons/LevelBtn1" method="_on_level_btn_2_pressed"]
+[connection signal="pressed" from="World1Map/LevelButtons/LevelBtn3" to="World1Map/LevelButtons/LevelBtn1" method="_on_level_btn_3_pressed"]
+[connection signal="pressed" from="World1Map/LevelButtons/LevelBtn4" to="World1Map/LevelButtons/LevelBtn1" method="_on_level_btn_4_pressed"]
 [connection signal="pressed" from="HBoxContainer/PreviousWorldBtn" to="." method="_on_previous_world_btn_pressed"]
 [connection signal="pressed" from="HBoxContainer/NextWorldBtn" to="." method="_on_next_world_btn_pressed"]
+[connection signal="pressed" from="World2Map/LevelButtons/LevelBtn1" to="World2Map/LevelButtons/LevelBtn1" method="_on_pressed"]
+[connection signal="pressed" from="World2Map/LevelButtons/LevelBtn2" to="World2Map/LevelButtons/LevelBtn1" method="_on_level_btn_2_pressed"]
+[connection signal="pressed" from="World2Map/LevelButtons/LevelBtn3" to="World2Map/LevelButtons/LevelBtn1" method="_on_level_btn_3_pressed"]
+[connection signal="pressed" from="World2Map/LevelButtons/LevelBtn4" to="World2Map/LevelButtons/LevelBtn1" method="_on_level_btn_4_pressed"]
+[connection signal="pressed" from="World3Map/LevelButtons/LevelBtn1" to="World3Map/LevelButtons/LevelBtn1" method="_on_pressed"]
+[connection signal="pressed" from="World3Map/LevelButtons/LevelBtn2" to="World3Map/LevelButtons/LevelBtn1" method="_on_level_btn_2_pressed"]
+[connection signal="pressed" from="World3Map/LevelButtons/LevelBtn3" to="World3Map/LevelButtons/LevelBtn1" method="_on_level_btn_3_pressed"]
+[connection signal="pressed" from="World3Map/LevelButtons/LevelBtn4" to="World3Map/LevelButtons/LevelBtn1" method="_on_level_btn_4_pressed"]
+[connection signal="pressed" from="World4Map/LevelButtons/LevelBtn1" to="World4Map/LevelButtons/LevelBtn1" method="_on_pressed"]
+[connection signal="pressed" from="World4Map/LevelButtons/LevelBtn2" to="World4Map/LevelButtons/LevelBtn1" method="_on_level_btn_2_pressed"]
+[connection signal="pressed" from="World4Map/LevelButtons/LevelBtn3" to="World4Map/LevelButtons/LevelBtn1" method="_on_level_btn_3_pressed"]
+[connection signal="pressed" from="World4Map/LevelButtons/LevelBtn4" to="World4Map/LevelButtons/LevelBtn1" method="_on_level_btn_4_pressed"]
+[connection signal="pressed" from="World5Map/LevelButtons/LevelBtn1" to="World5Map/LevelButtons/LevelBtn1" method="_on_pressed"]
+[connection signal="pressed" from="World5Map/LevelButtons/LevelBtn2" to="World5Map/LevelButtons/LevelBtn1" method="_on_level_btn_2_pressed"]
+[connection signal="pressed" from="World5Map/LevelButtons/LevelBtn3" to="World5Map/LevelButtons/LevelBtn1" method="_on_level_btn_3_pressed"]
+[connection signal="pressed" from="World5Map/LevelButtons/LevelBtn4" to="World5Map/LevelButtons/LevelBtn1" method="_on_level_btn_4_pressed"]

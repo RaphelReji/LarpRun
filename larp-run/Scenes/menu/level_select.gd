@@ -19,7 +19,7 @@ func update_world_title():
 	var first_level = (current_world -1) * 10 + 1
 	for i in range(10):
 		var button = $MapPath/LevelButtons.get_child(i)
-		button.tooltip_text = "Level" + str(first_level + 1)
+		button.tooltip_text = "Level" + str(first_level + i)
 		$Background.modulate = Color("#55515f")
 	
 	
