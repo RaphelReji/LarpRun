@@ -318,8 +318,8 @@ scroll_scale = Vector2(0.2, 0.2)
 repeat_size = Vector2(1280, 0)
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/FarBackground (Parallax2D)" unique_id=1890386360]
-position = Vector2(616, 364)
-scale = Vector2(2.3, 2.3)
+position = Vector2(619, 332)
+scale = Vector2(2.2903228, 2.4777777)
 texture = ExtResource("1_ryc53")
 
 [node name="DistantMountains (Parallax2D)" type="Parallax2D" parent="ParallaxBackground" unique_id=1011864533]
@@ -328,8 +328,8 @@ scroll_scale = Vector2(0.4, 0.4)
 repeat_size = Vector2(1280, 0)
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/DistantMountains (Parallax2D)" unique_id=1211989250]
-position = Vector2(616, 364)
-scale = Vector2(2.3, 2.3)
+position = Vector2(614.5, 332)
+scale = Vector2(2.3048387, 2.4777777)
 texture = ExtResource("2_vqu04")
 
 [node name="DetailLayer (Parallax2D)" type="Parallax2D" parent="ParallaxBackground" unique_id=1145951726]
@@ -338,8 +338,8 @@ scroll_scale = Vector2(0.6, 0.6)
 repeat_size = Vector2(1280, 0)
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/DetailLayer (Parallax2D)" unique_id=128697215]
-position = Vector2(616, 364)
-scale = Vector2(2.3, 2.3)
+position = Vector2(615.99994, 330)
+scale = Vector2(2.3, 2.4888887)
 texture = ExtResource("3_ktrwh")
 
 [node name="MidLayer (Parallax2D)" type="Parallax2D" parent="ParallaxBackground" unique_id=1348158018]
@@ -348,8 +348,8 @@ scroll_scale = Vector2(0.8, 0.8)
 repeat_size = Vector2(1280, 0)
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/MidLayer (Parallax2D)" unique_id=1516088109]
-position = Vector2(616, 364)
-scale = Vector2(2.3, 2.3)
+position = Vector2(623.5, 332)
+scale = Vector2(2.2758064, 2.4777775)
 texture = ExtResource("4_8ls1f")
 
 [node name="NearLayer (Parallax2D)" type="Parallax2D" parent="ParallaxBackground" unique_id=420674083]
@@ -358,8 +358,8 @@ scroll_scale = Vector2(0.1, 0.1)
 repeat_size = Vector2(1280, 0)
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/NearLayer (Parallax2D)" unique_id=1492303402]
-position = Vector2(616, 364)
-scale = Vector2(2.3, 2.3)
+position = Vector2(624.00006, 333.00003)
+scale = Vector2(2.2741935, 2.4722223)
 texture = ExtResource("5_hlubj")
 
 [node name="ForegroundLayer (Parallax2D)" type="Parallax2D" parent="ParallaxBackground" unique_id=1542679677]
@@ -368,8 +368,8 @@ scroll_scale = Vector2(0.12, 0.12)
 repeat_size = Vector2(1280, 0)
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ForegroundLayer (Parallax2D)" unique_id=1136582793]
-position = Vector2(616, 364)
-scale = Vector2(2.3, 2.3)
+position = Vector2(617.99994, 326.49997)
+scale = Vector2(2.2935483, 2.5083334)
 texture = ExtResource("6_xgki2")
 
 [node name="GameManager" type="Node" parent="." unique_id=1863513295]

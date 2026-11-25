@@ -29,7 +29,35 @@
 [ext_resource type="Texture2D" uid="uid://cestomnsso74f" path="res://Assets/Menu/Levels/19.png" id="27_y704u"]
 [ext_resource type="Texture2D" uid="uid://bkqp1fvcs6xhf" path="res://Assets/Menu/Levels/20.png" id="28_nqvme"]
 [ext_resource type="Texture2D" uid="uid://b08o2s2jrxqtk" path="res://Assets/Menu/Levels/21.png" id="29_mq4fn"]
+[ext_resource type="Texture2D" uid="uid://dk8sa2vxl4krn" path="res://Assets/Menu/Levels/22.png" id="30_4bd3t"]
 [ext_resource type="Texture2D" uid="uid://ccxe5dh8rhvm6" path="res://Assets/Menu/Levels/50.png" id="30_po6uh"]
+[ext_resource type="Texture2D" uid="uid://d18ig771mcvco" path="res://Assets/Menu/Levels/23.png" id="31_oflwi"]
+[ext_resource type="Texture2D" uid="uid://d3j628v8g2avs" path="res://Assets/Menu/Levels/24.png" id="32_p21mk"]
+[ext_resource type="Texture2D" uid="uid://4hlnuoi6lbp7" path="res://Assets/Menu/Levels/25.png" id="33_jr461"]
+[ext_resource type="Texture2D" uid="uid://ckb2ehkft1dkc" path="res://Assets/Menu/Levels/26.png" id="34_me8iy"]
+[ext_resource type="Texture2D" uid="uid://blho4s7x5chui" path="res://Assets/Menu/Levels/27.png" id="35_fxkb0"]
+[ext_resource type="Texture2D" uid="uid://d0hn0e0awoh1u" path="res://Assets/Menu/Levels/28.png" id="36_up7l1"]
+[ext_resource type="Texture2D" uid="uid://ky3w65vi4pxh" path="res://Assets/Menu/Levels/29.png" id="37_bj4lr"]
+[ext_resource type="Texture2D" uid="uid://bvomylmk05043" path="res://Assets/Menu/Levels/30.png" id="38_h7lk5"]
+[ext_resource type="Texture2D" uid="uid://bldw8i26lhf44" path="res://Assets/Menu/Levels/31.png" id="39_c4ay1"]
+[ext_resource type="Texture2D" uid="uid://cct8rmloexkj5" path="res://Assets/Menu/Levels/32.png" id="40_31par"]
+[ext_resource type="Texture2D" uid="uid://cco2ap4sbv0qv" path="res://Assets/Menu/Levels/33.png" id="41_pdt6e"]
+[ext_resource type="Texture2D" uid="uid://s28p3otpliki" path="res://Assets/Menu/Levels/34.png" id="42_10s1b"]
+[ext_resource type="Texture2D" uid="uid://jwmliteiml1i" path="res://Assets/Menu/Levels/35.png" id="43_ixa2y"]
+[ext_resource type="Texture2D" uid="uid://chsfg1ibjrscd" path="res://Assets/Menu/Levels/36.png" id="44_hbh07"]
+[ext_resource type="Texture2D" uid="uid://b1dfqgydid26d" path="res://Assets/Menu/Levels/37.png" id="45_cqisu"]
+[ext_resource type="Texture2D" uid="uid://bsjwgefwasrey" path="res://Assets/Menu/Levels/38.png" id="46_tn4mn"]
+[ext_resource type="Texture2D" uid="uid://c0r4ldfk4l2uk" path="res://Assets/Menu/Levels/39.png" id="47_jlumf"]
+[ext_resource type="Texture2D" uid="uid://dme5cnd3yni86" path="res://Assets/Menu/Levels/40.png" id="48_22jn4"]
+[ext_resource type="Texture2D" uid="uid://csw1tw051n14n" path="res://Assets/Menu/Levels/41.png" id="49_22jn4"]
+[ext_resource type="Texture2D" uid="uid://co4f2bgnrvdoj" path="res://Assets/Menu/Levels/42.png" id="50_c68io"]
+[ext_resource type="Texture2D" uid="uid://c2y6pkm2tjtg8" path="res://Assets/Menu/Levels/43.png" id="51_htcac"]
+[ext_resource type="Texture2D" uid="uid://dvtnkoyp21as1" path="res://Assets/Menu/Levels/44.png" id="52_a2d6c"]
+[ext_resource type="Texture2D" uid="uid://bu2hudj7n4yqp" path="res://Assets/Menu/Levels/45.png" id="53_b4s5l"]
+[ext_resource type="Texture2D" uid="uid://cfm6wvhly8ejc" path="res://Assets/Menu/Levels/46.png" id="54_y0wqd"]
+[ext_resource type="Texture2D" uid="uid://b751cvevwj2av" path="res://Assets/Menu/Levels/47.png" id="55_1b0o2"]
+[ext_resource type="Texture2D" uid="uid://dak44sk1d88x1" path="res://Assets/Menu/Levels/48.png" id="56_05aht"]
+[ext_resource type="Texture2D" uid="uid://cdyay7m67yb2u" path="res://Assets/Menu/Levels/49.png" id="57_wd6f7"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_np1q4"]
 bg_color = Color(0.1882353, 0.4, 0.4509804, 1)
@@ -60,13 +88,13 @@ scroll_offset = Vector2(258, 239)
 
 [node name="Layer1" type="Sprite2D" parent="WorldBackground" unique_id=479054841]
 texture_filter = 1
-position = Vector2(387.00006, 118.000015)
+position = Vector2(377, 118.000015)
 scale = Vector2(2.119355, 2.0722222)
 texture = ExtResource("2_np1q4")
 
 [node name="Layer2" type="Sprite2D" parent="WorldBackground" unique_id=792219808]
 texture_filter = 1
-position = Vector2(396.50006, 105.5)
+position = Vector2(371, 117)
 scale = Vector2(2.1145163, 2.0305555)
 texture = ExtResource("3_6iy6y")
 
@@ -78,13 +106,13 @@ texture = ExtResource("4_5tgk1")
 
 [node name="Layer4" type="Sprite2D" parent="WorldBackground" unique_id=1653008912]
 texture_filter = 1
-position = Vector2(384, 116.99999)
+position = Vector2(370, 128.99998)
 scale = Vector2(2.1258066, 2.1000001)
 texture = ExtResource("5_ytj60")
 
 [node name="Layer5" type="Sprite2D" parent="WorldBackground" unique_id=890901849]
 texture_filter = 1
-position = Vector2(401.5, 115.000046)
+position = Vector2(392, 100.999985)
 scale = Vector2(2.082258, 2.1000001)
 texture = ExtResource("6_3o52v")
 
@@ -127,6 +155,7 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_6iy6y")
 text = ">"
 
 [node name="World1Map" type="Node2D" parent="." unique_id=1701720417]
+visible = false
 
 [node name="PathLine" type="Line2D" parent="World1Map" unique_id=1943148161]
 position = Vector2(26, 3)
@@ -313,7 +342,7 @@ offset_left = 53.0
 offset_top = 176.0
 offset_right = 133.0
 offset_bottom = 256.0
-tooltip_text = "LEVEL 1"
+tooltip_text = "LEVEL 11"
 disabled = true
 texture_normal = ExtResource("19_6iy6y")
 stretch_mode = 0
@@ -327,7 +356,7 @@ offset_left = 160.0
 offset_top = 312.0
 offset_right = 240.0
 offset_bottom = 392.0
-tooltip_text = "LEVEL 2"
+tooltip_text = "LEVEL 12"
 disabled = true
 texture_normal = ExtResource("20_v7jfp")
 stretch_mode = 0
@@ -341,7 +370,7 @@ offset_left = 359.0
 offset_top = 127.0
 offset_right = 439.0
 offset_bottom = 207.0
-tooltip_text = "LEVEL 3"
+tooltip_text = "LEVEL 13"
 disabled = true
 texture_normal = ExtResource("21_ymrs7")
 stretch_mode = 0
@@ -355,7 +384,7 @@ offset_left = 504.0
 offset_top = 274.0
 offset_right = 584.0
 offset_bottom = 354.0
-tooltip_text = "LEVEL 4"
+tooltip_text = "LEVEL 14"
 disabled = true
 texture_normal = ExtResource("22_mq4fn")
 stretch_mode = 0
@@ -369,7 +398,7 @@ offset_left = 620.0
 offset_top = 113.0
 offset_right = 700.0
 offset_bottom = 193.0
-tooltip_text = "LEVEL 5"
+tooltip_text = "LEVEL 15"
 disabled = true
 texture_normal = ExtResource("23_po6uh")
 stretch_mode = 0
@@ -383,7 +412,7 @@ offset_left = 867.0
 offset_top = 124.0
 offset_right = 947.0
 offset_bottom = 204.0
-tooltip_text = "LEVEL 6"
+tooltip_text = "LEVEL 16"
 disabled = true
 texture_normal = ExtResource("24_1pobh")
 stretch_mode = 0
@@ -397,7 +426,7 @@ offset_left = 1139.0
 offset_top = 311.0
 offset_right = 1219.0
 offset_bottom = 391.0
-tooltip_text = "LEVEL 7"
+tooltip_text = "LEVEL 17"
 disabled = true
 texture_normal = ExtResource("25_0d0lh")
 stretch_mode = 0
@@ -411,7 +440,7 @@ offset_left = 894.0
 offset_top = 564.0
 offset_right = 974.0
 offset_bottom = 644.0
-tooltip_text = "LEVEL 8"
+tooltip_text = "LEVEL 18"
 disabled = true
 texture_normal = ExtResource("26_3dt5p")
 stretch_mode = 0
@@ -425,7 +454,7 @@ offset_left = 592.0
 offset_top = 472.0
 offset_right = 672.0
 offset_bottom = 552.0
-tooltip_text = "LEVEL 9"
+tooltip_text = "LEVEL 19"
 disabled = true
 texture_normal = ExtResource("27_y704u")
 stretch_mode = 0
@@ -439,7 +468,7 @@ offset_left = 287.0
 offset_top = 462.0
 offset_right = 367.0
 offset_bottom = 542.0
-tooltip_text = "LEVEL 10"
+tooltip_text = "LEVEL 20"
 disabled = true
 texture_normal = ExtResource("28_nqvme")
 stretch_mode = 0
@@ -457,8 +486,9 @@ text = "WORLD 2 - THE BEGINNING"
 visible = false
 
 [node name="PathLine" type="Line2D" parent="World3Map" unique_id=215374455]
-position = Vector2(26, 3)
-points = PackedVector2Array(74, 526, 241, 260, 354, 605, 467, 428, 731, 631, 655, 408, 1042, 603, 824, 260, 1100, 400, 1188, 160)
+position = Vector2(47.921368, -66.35538)
+scale = Vector2(1.0490286, 1.0578512)
+points = PackedVector2Array(0.0749588, 210.19534, 96.35451, 390.75003, 365, 293, 246.01677, 505.13284, 488.14554, 626.1329, 574, 311, 748, 477, 781, 235, 1024, 417, 1093, 247)
 default_color = Color(0.016842017, 0.006297972, 0.05945588, 1)
 joint_mode = 2
 begin_cap_mode = 2
@@ -474,11 +504,11 @@ offset_bottom = 40.0
 modulate = Color(0.3180198, 0.31801978, 0.31801975, 1)
 texture_filter = 1
 layout_mode = 0
-offset_left = 60.0
-offset_top = 488.0
-offset_right = 140.0
-offset_bottom = 568.0
-tooltip_text = "LEVEL 1"
+offset_left = 10.0
+offset_top = 107.0
+offset_right = 90.0
+offset_bottom = 187.0
+tooltip_text = "LEVEL 21"
 disabled = true
 texture_normal = ExtResource("29_mq4fn")
 stretch_mode = 0
@@ -488,13 +518,13 @@ script = ExtResource("4_1q73p")
 modulate = Color(0.36282945, 0.36282945, 0.36282945, 1)
 texture_filter = 1
 layout_mode = 0
-offset_left = 224.0
-offset_top = 234.0
-offset_right = 304.0
-offset_bottom = 314.0
-tooltip_text = "LEVEL 2"
+offset_left = 119.0
+offset_top = 300.0
+offset_right = 199.0
+offset_bottom = 380.0
+tooltip_text = "LEVEL 22"
 disabled = true
-texture_normal = ExtResource("5_ty75k")
+texture_normal = ExtResource("30_4bd3t")
 stretch_mode = 0
 script = ExtResource("4_1q73p")
 
@@ -502,13 +532,13 @@ script = ExtResource("4_1q73p")
 modulate = Color(0.32915837, 0.3291584, 0.3291584, 1)
 texture_filter = 1
 layout_mode = 0
-offset_left = 337.0
-offset_top = 564.0
-offset_right = 417.0
-offset_bottom = 644.0
-tooltip_text = "LEVEL 3"
+offset_left = 383.0
+offset_top = 211.0
+offset_right = 463.0
+offset_bottom = 291.0
+tooltip_text = "LEVEL 23"
 disabled = true
-texture_normal = ExtResource("6_np1q4")
+texture_normal = ExtResource("31_oflwi")
 stretch_mode = 0
 script = ExtResource("4_1q73p")
 
@@ -516,13 +546,13 @@ script = ExtResource("4_1q73p")
 modulate = Color(0.32941177, 0.32941177, 0.32941177, 1)
 texture_filter = 1
 layout_mode = 0
-offset_left = 451.0
-offset_top = 394.0
-offset_right = 531.0
-offset_bottom = 474.0
-tooltip_text = "LEVEL 4"
+offset_left = 281.0
+offset_top = 426.0
+offset_right = 361.0
+offset_bottom = 506.0
+tooltip_text = "LEVEL 24"
 disabled = true
-texture_normal = ExtResource("7_6iy6y")
+texture_normal = ExtResource("32_p21mk")
 stretch_mode = 0
 script = ExtResource("4_1q73p")
 
@@ -530,13 +560,13 @@ script = ExtResource("4_1q73p")
 modulate = Color(0.32941177, 0.32941177, 0.32941177, 1)
 texture_filter = 1
 layout_mode = 0
-offset_left = 714.0
-offset_top = 593.0
-offset_right = 794.0
-offset_bottom = 673.0
-tooltip_text = "LEVEL 5"
+offset_left = 524.0
+offset_top = 550.0
+offset_right = 604.0
+offset_bottom = 630.0
+tooltip_text = "LEVEL 25"
 disabled = true
-texture_normal = ExtResource("8_5tgk1")
+texture_normal = ExtResource("33_jr461")
 stretch_mode = 0
 script = ExtResource("4_1q73p")
 
@@ -544,13 +574,13 @@ script = ExtResource("4_1q73p")
 modulate = Color(0.32941177, 0.32941177, 0.32941177, 1)
 texture_filter = 1
 layout_mode = 0
-offset_left = 638.0
-offset_top = 370.0
-offset_right = 718.0
-offset_bottom = 450.0
-tooltip_text = "LEVEL 6"
+offset_left = 610.0
+offset_top = 230.0
+offset_right = 690.0
+offset_bottom = 310.0
+tooltip_text = "LEVEL 26"
 disabled = true
-texture_normal = ExtResource("9_ytj60")
+texture_normal = ExtResource("34_me8iy")
 stretch_mode = 0
 script = ExtResource("4_1q73p")
 
@@ -558,13 +588,13 @@ script = ExtResource("4_1q73p")
 modulate = Color(0.32941177, 0.32941177, 0.32941177, 1)
 texture_filter = 1
 layout_mode = 0
-offset_left = 1025.0
-offset_top = 566.0
-offset_right = 1105.0
-offset_bottom = 646.0
-tooltip_text = "LEVEL 7"
+offset_left = 789.0
+offset_top = 400.0
+offset_right = 869.0
+offset_bottom = 480.0
+tooltip_text = "LEVEL 27"
 disabled = true
-texture_normal = ExtResource("10_3o52v")
+texture_normal = ExtResource("35_fxkb0")
 stretch_mode = 0
 script = ExtResource("4_1q73p")
 
@@ -572,13 +602,13 @@ script = ExtResource("4_1q73p")
 modulate = Color(0.32941177, 0.32941177, 0.32941177, 1)
 texture_filter = 1
 layout_mode = 0
-offset_left = 807.0
-offset_top = 227.0
-offset_right = 887.0
-offset_bottom = 307.0
-tooltip_text = "LEVEL 8"
+offset_left = 831.0
+offset_top = 148.0
+offset_right = 911.0
+offset_bottom = 228.0
+tooltip_text = "LEVEL 28"
 disabled = true
-texture_normal = ExtResource("11_0fiia")
+texture_normal = ExtResource("36_up7l1")
 stretch_mode = 0
 script = ExtResource("4_1q73p")
 
@@ -586,13 +616,13 @@ script = ExtResource("4_1q73p")
 modulate = Color(0.32941177, 0.32941177, 0.32941177, 1)
 texture_filter = 1
 layout_mode = 0
-offset_left = 1084.0
-offset_top = 362.0
-offset_right = 1164.0
-offset_bottom = 442.0
-tooltip_text = "LEVEL 9"
+offset_left = 1075.0
+offset_top = 328.0
+offset_right = 1155.0
+offset_bottom = 408.0
+tooltip_text = "LEVEL 29"
 disabled = true
-texture_normal = ExtResource("12_0ffed")
+texture_normal = ExtResource("37_bj4lr")
 stretch_mode = 0
 script = ExtResource("4_1q73p")
 
@@ -600,13 +630,13 @@ script = ExtResource("4_1q73p")
 modulate = Color(0.32941177, 0.32941177, 0.32941177, 1)
 texture_filter = 1
 layout_mode = 0
-offset_left = 1177.0
-offset_top = 129.0
-offset_right = 1257.0
-offset_bottom = 209.0
-tooltip_text = "LEVEL 10"
+offset_left = 1156.0
+offset_top = 154.0
+offset_right = 1236.0
+offset_bottom = 234.0
+tooltip_text = "LEVEL 30"
 disabled = true
-texture_normal = ExtResource("13_c6u0j")
+texture_normal = ExtResource("38_h7lk5")
 stretch_mode = 0
 script = ExtResource("4_1q73p")
 
@@ -616,14 +646,13 @@ offset_top = 74.0
 offset_right = 844.0
 offset_bottom = 124.0
 theme_override_font_sizes/font_size = 36
-text = "WORLD 1 - THE BEGINNING"
+text = "WORLD 3 - THE BEGINNING"
 
 [node name="World4Map" type="Node2D" parent="." unique_id=1235263277]
-visible = false
 
 [node name="PathLine" type="Line2D" parent="World4Map" unique_id=853784727]
-position = Vector2(26, 3)
-points = PackedVector2Array(74, 526, 241, 260, 354, 605, 467, 428, 731, 631, 655, 408, 1042, 603, 824, 260, 1100, 400, 1188, 160)
+position = Vector2(73, 48)
+points = PackedVector2Array(14, 133, -39, 281, 38, 372, 38, 469, 185, 469, 267, 602, 423, 564, 582, 592, 772, 482, 914, 565, 1003, 507, 937, 375, 1032, 286, 1066, 180, 893, 154, 790, 188, 640, 132, 560, 237, 425, 136, 321, 202, 235, 154, 137, 112, 160, 337, 508, 344)
 default_color = Color(0.016842017, 0.006297972, 0.05945588, 1)
 joint_mode = 2
 begin_cap_mode = 2
@@ -636,14 +665,16 @@ offset_right = 40.0
 offset_bottom = 40.0
 
 [node name="LevelBtn1" type="TextureButton" parent="World4Map/LevelButtons" unique_id=1458331276]
+modulate = Color(0.34781694, 0.34781697, 0.3478169, 1)
 texture_filter = 1
 layout_mode = 0
-offset_left = 60.0
-offset_top = 488.0
-offset_right = 140.0
-offset_bottom = 568.0
-tooltip_text = "LEVEL 1"
-texture_normal = ExtResource("3_650x2")
+offset_left = 44.0
+offset_top = 146.0
+offset_right = 124.0
+offset_bottom = 226.0
+tooltip_text = "LEVEL 31"
+disabled = true
+texture_normal = ExtResource("39_c4ay1")
 stretch_mode = 0
 script = ExtResource("4_1q73p")
 
@@ -651,13 +682,13 @@ script = ExtResource("4_1q73p")
 modulate = Color(0.36282945, 0.36282945, 0.36282945, 1)
 texture_filter = 1
 layout_mode = 0
-offset_left = 224.0
-offset_top = 234.0
-offset_right = 304.0
-offset_bottom = 314.0
-tooltip_text = "LEVEL 2"
+offset_left = 59.0
+offset_top = 372.0
+offset_right = 139.0
+offset_bottom = 452.0
+tooltip_text = "LEVEL 32"
 disabled = true
-texture_normal = ExtResource("5_ty75k")
+texture_normal = ExtResource("40_31par")
 stretch_mode = 0
 script = ExtResource("4_1q73p")
 
@@ -665,13 +696,13 @@ script = ExtResource("4_1q73p")
 modulate = Color(0.32915837, 0.3291584, 0.3291584, 1)
 texture_filter = 1
 layout_mode = 0
-offset_left = 337.0
-offset_top = 564.0
-offset_right = 417.0
-offset_bottom = 644.0
-tooltip_text = "LEVEL 3"
+offset_left = 218.0
+offset_top = 485.0
+offset_right = 298.0
+offset_bottom = 565.0
+tooltip_text = "LEVEL 33"
 disabled = true
-texture_normal = ExtResource("6_np1q4")
+texture_normal = ExtResource("41_pdt6e")
 stretch_mode = 0
 script = ExtResource("4_1q73p")
 
@@ -679,13 +710,13 @@ script = ExtResource("4_1q73p")
 modulate = Color(0.32941177, 0.32941177, 0.32941177, 1)
 texture_filter = 1
 layout_mode = 0
-offset_left = 451.0
-offset_top = 394.0
-offset_right = 531.0
-offset_bottom = 474.0
-tooltip_text = "LEVEL 4"
+offset_left = 464.0
+offset_top = 567.0
+offset_right = 544.0
+offset_bottom = 647.0
+tooltip_text = "LEVEL 34"
 disabled = true
-texture_normal = ExtResource("7_6iy6y")
+texture_normal = ExtResource("42_10s1b")
 stretch_mode = 0
 script = ExtResource("4_1q73p")
 
@@ -693,13 +724,13 @@ script = ExtResource("4_1q73p")
 modulate = Color(0.32941177, 0.32941177, 0.32941177, 1)
 texture_filter = 1
 layout_mode = 0
-offset_left = 714.0
-offset_top = 593.0
-offset_right = 794.0
-offset_bottom = 673.0
-tooltip_text = "LEVEL 5"
+offset_left = 809.0
+offset_top = 492.0
+offset_right = 889.0
+offset_bottom = 572.0
+tooltip_text = "LEVEL 35"
 disabled = true
-texture_normal = ExtResource("8_5tgk1")
+texture_normal = ExtResource("43_ixa2y")
 stretch_mode = 0
 script = ExtResource("4_1q73p")
 
@@ -707,13 +738,13 @@ script = ExtResource("4_1q73p")
 modulate = Color(0.32941177, 0.32941177, 0.32941177, 1)
 texture_filter = 1
 layout_mode = 0
-offset_left = 638.0
-offset_top = 370.0
-offset_right = 718.0
-offset_bottom = 450.0
-tooltip_text = "LEVEL 6"
+offset_left = 994.0
+offset_top = 380.0
+offset_right = 1074.0
+offset_bottom = 460.0
+tooltip_text = "LEVEL 36"
 disabled = true
-texture_normal = ExtResource("9_ytj60")
+texture_normal = ExtResource("44_hbh07")
 stretch_mode = 0
 script = ExtResource("4_1q73p")
 
@@ -721,13 +752,13 @@ script = ExtResource("4_1q73p")
 modulate = Color(0.32941177, 0.32941177, 0.32941177, 1)
 texture_filter = 1
 layout_mode = 0
-offset_left = 1025.0
-offset_top = 566.0
-offset_right = 1105.0
-offset_bottom = 646.0
-tooltip_text = "LEVEL 7"
+offset_left = 1093.0
+offset_top = 195.0
+offset_right = 1173.0
+offset_bottom = 275.0
+tooltip_text = "LEVEL 37"
 disabled = true
-texture_normal = ExtResource("10_3o52v")
+texture_normal = ExtResource("45_cqisu")
 stretch_mode = 0
 script = ExtResource("4_1q73p")
 
@@ -735,13 +766,13 @@ script = ExtResource("4_1q73p")
 modulate = Color(0.32941177, 0.32941177, 0.32941177, 1)
 texture_filter = 1
 layout_mode = 0
-offset_left = 807.0
-offset_top = 227.0
-offset_right = 887.0
-offset_bottom = 307.0
-tooltip_text = "LEVEL 8"
+offset_left = 665.0
+offset_top = 143.0
+offset_right = 745.0
+offset_bottom = 223.0
+tooltip_text = "LEVEL 38"
 disabled = true
-texture_normal = ExtResource("11_0fiia")
+texture_normal = ExtResource("46_tn4mn")
 stretch_mode = 0
 script = ExtResource("4_1q73p")
 
@@ -749,13 +780,13 @@ script = ExtResource("4_1q73p")
 modulate = Color(0.32941177, 0.32941177, 0.32941177, 1)
 texture_filter = 1
 layout_mode = 0
-offset_left = 1084.0
-offset_top = 362.0
-offset_right = 1164.0
-offset_bottom = 442.0
-tooltip_text = "LEVEL 9"
+offset_left = 351.0
+offset_top = 193.0
+offset_right = 431.0
+offset_bottom = 273.0
+tooltip_text = "LEVEL 39"
 disabled = true
-texture_normal = ExtResource("12_0ffed")
+texture_normal = ExtResource("47_jlumf")
 stretch_mode = 0
 script = ExtResource("4_1q73p")
 
@@ -763,13 +794,13 @@ script = ExtResource("4_1q73p")
 modulate = Color(0.32941177, 0.32941177, 0.32941177, 1)
 texture_filter = 1
 layout_mode = 0
-offset_left = 1177.0
-offset_top = 129.0
-offset_right = 1257.0
-offset_bottom = 209.0
-tooltip_text = "LEVEL 10"
+offset_left = 545.0
+offset_top = 350.0
+offset_right = 625.0
+offset_bottom = 430.0
+tooltip_text = "LEVEL 40"
 disabled = true
-texture_normal = ExtResource("13_c6u0j")
+texture_normal = ExtResource("48_22jn4")
 stretch_mode = 0
 script = ExtResource("4_1q73p")
 
@@ -785,8 +816,8 @@ text = "WORLD 1 - THE BEGINNING"
 visible = false
 
 [node name="PathLine" type="Line2D" parent="World5Map" unique_id=980315895]
-position = Vector2(26, 3)
-points = PackedVector2Array(74, 526, 241, 260, 354, 605, 467, 428, 731, 631, 655, 408, 1042, 603, 824, 260, 1100, 400, 1188, 160)
+position = Vector2(-13, 6)
+points = PackedVector2Array(49, 198, 113, 525, 301, 586, 421, 654, 549, 577, 699, 575, 1120, 557, 1207, 272, 1205, 166, 978, 208, 656, 176, 176, 185, 174, 371, 160, 469, 576, 504, 970, 446, 906, 305, 715, 264, 469, 269, 384.9085, 320.34558, 413, 340)
 default_color = Color(0.016842017, 0.006297972, 0.05945588, 1)
 joint_mode = 2
 begin_cap_mode = 2
@@ -799,14 +830,16 @@ offset_right = 40.0
 offset_bottom = 40.0
 
 [node name="LevelBtn1" type="TextureButton" parent="World5Map/LevelButtons" unique_id=1083733117]
+modulate = Color(0.34781694, 0.34781697, 0.3478169, 1)
 texture_filter = 1
 layout_mode = 0
-offset_left = 60.0
-offset_top = 488.0
-offset_right = 140.0
-offset_bottom = 568.0
-tooltip_text = "LEVEL 1"
-texture_normal = ExtResource("3_650x2")
+offset_left = 4.0
+offset_top = 166.0
+offset_right = 84.0
+offset_bottom = 246.0
+tooltip_text = "LEVEL 41"
+disabled = true
+texture_normal = ExtResource("49_22jn4")
 stretch_mode = 0
 script = ExtResource("4_1q73p")
 
@@ -814,13 +847,13 @@ script = ExtResource("4_1q73p")
 modulate = Color(0.36282945, 0.36282945, 0.36282945, 1)
 texture_filter = 1
 layout_mode = 0
-offset_left = 224.0
-offset_top = 234.0
-offset_right = 304.0
-offset_bottom = 314.0
-tooltip_text = "LEVEL 2"
+offset_left = 66.0
+offset_top = 490.0
+offset_right = 146.0
+offset_bottom = 570.0
+tooltip_text = "LEVEL 42"
 disabled = true
-texture_normal = ExtResource("5_ty75k")
+texture_normal = ExtResource("50_c68io")
 stretch_mode = 0
 script = ExtResource("4_1q73p")
 
@@ -828,13 +861,13 @@ script = ExtResource("4_1q73p")
 modulate = Color(0.32915837, 0.3291584, 0.3291584, 1)
 texture_filter = 1
 layout_mode = 0
-offset_left = 337.0
-offset_top = 564.0
-offset_right = 417.0
-offset_bottom = 644.0
-tooltip_text = "LEVEL 3"
+offset_left = 364.0
+offset_top = 611.0
+offset_right = 444.0
+offset_bottom = 691.0
+tooltip_text = "LEVEL 43"
 disabled = true
-texture_normal = ExtResource("6_np1q4")
+texture_normal = ExtResource("51_htcac")
 stretch_mode = 0
 script = ExtResource("4_1q73p")
 
@@ -842,13 +875,13 @@ script = ExtResource("4_1q73p")
 modulate = Color(0.32941177, 0.32941177, 0.32941177, 1)
 texture_filter = 1
 layout_mode = 0
-offset_left = 451.0
-offset_top = 394.0
-offset_right = 531.0
-offset_bottom = 474.0
-tooltip_text = "LEVEL 4"
+offset_left = 685.0
+offset_top = 539.0
+offset_right = 765.0
+offset_bottom = 619.0
+tooltip_text = "LEVEL 44"
 disabled = true
-texture_normal = ExtResource("7_6iy6y")
+texture_normal = ExtResource("52_a2d6c")
 stretch_mode = 0
 script = ExtResource("4_1q73p")
 
@@ -856,13 +889,13 @@ script = ExtResource("4_1q73p")
 modulate = Color(0.32941177, 0.32941177, 0.32941177, 1)
 texture_filter = 1
 layout_mode = 0
-offset_left = 714.0
-offset_top = 593.0
-offset_right = 794.0
-offset_bottom = 673.0
-tooltip_text = "LEVEL 5"
+offset_left = 1069.0
+offset_top = 515.0
+offset_right = 1149.0
+offset_bottom = 595.0
+tooltip_text = "LEVEL 45"
 disabled = true
-texture_normal = ExtResource("8_5tgk1")
+texture_normal = ExtResource("53_b4s5l")
 stretch_mode = 0
 script = ExtResource("4_1q73p")
 
@@ -870,13 +903,13 @@ script = ExtResource("4_1q73p")
 modulate = Color(0.32941177, 0.32941177, 0.32941177, 1)
 texture_filter = 1
 layout_mode = 0
-offset_left = 638.0
-offset_top = 370.0
-offset_right = 718.0
-offset_bottom = 450.0
-tooltip_text = "LEVEL 6"
+offset_left = 1145.0
+offset_top = 146.0
+offset_right = 1225.0
+offset_bottom = 226.0
+tooltip_text = "LEVEL 46"
 disabled = true
-texture_normal = ExtResource("9_ytj60")
+texture_normal = ExtResource("54_y0wqd")
 stretch_mode = 0
 script = ExtResource("4_1q73p")
 
@@ -884,13 +917,13 @@ script = ExtResource("4_1q73p")
 modulate = Color(0.32941177, 0.32941177, 0.32941177, 1)
 texture_filter = 1
 layout_mode = 0
-offset_left = 1025.0
-offset_top = 566.0
-offset_right = 1105.0
-offset_bottom = 646.0
-tooltip_text = "LEVEL 7"
+offset_left = 562.0
+offset_top = 147.0
+offset_right = 642.0
+offset_bottom = 227.0
+tooltip_text = "LEVEL 47"
 disabled = true
-texture_normal = ExtResource("10_3o52v")
+texture_normal = ExtResource("55_1b0o2")
 stretch_mode = 0
 script = ExtResource("4_1q73p")
 
@@ -898,13 +931,13 @@ script = ExtResource("4_1q73p")
 modulate = Color(0.32941177, 0.32941177, 0.32941177, 1)
 texture_filter = 1
 layout_mode = 0
-offset_left = 807.0
-offset_top = 227.0
-offset_right = 887.0
-offset_bottom = 307.0
-tooltip_text = "LEVEL 8"
+offset_left = 119.0
+offset_top = 412.0
+offset_right = 199.0
+offset_bottom = 492.0
+tooltip_text = "LEVEL 48"
 disabled = true
-texture_normal = ExtResource("11_0fiia")
+texture_normal = ExtResource("56_05aht")
 stretch_mode = 0
 script = ExtResource("4_1q73p")
 
@@ -912,13 +945,13 @@ script = ExtResource("4_1q73p")
 modulate = Color(0.32941177, 0.32941177, 0.32941177, 1)
 texture_filter = 1
 layout_mode = 0
-offset_left = 1084.0
-offset_top = 362.0
-offset_right = 1164.0
-offset_bottom = 442.0
-tooltip_text = "LEVEL 9"
+offset_left = 905.0
+offset_top = 403.0
+offset_right = 985.0
+offset_bottom = 483.0
+tooltip_text = "LEVEL 49"
 disabled = true
-texture_normal = ExtResource("12_0ffed")
+texture_normal = ExtResource("57_wd6f7")
 stretch_mode = 0
 script = ExtResource("4_1q73p")
 
@@ -926,11 +959,11 @@ script = ExtResource("4_1q73p")
 modulate = Color(0.32941177, 0.32941177, 0.32941177, 1)
 texture_filter = 1
 layout_mode = 0
-offset_left = 1177.0
-offset_top = 129.0
-offset_right = 1257.0
-offset_bottom = 209.0
-tooltip_text = "LEVEL 10"
+offset_left = 361.0
+offset_top = 290.0
+offset_right = 441.0
+offset_bottom = 370.0
+tooltip_text = "LEVEL 50"
 disabled = true
 texture_normal = ExtResource("30_po6uh")
 stretch_mode = 0

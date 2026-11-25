@@ -1,10 +1,15 @@
 [gd_scene format=4 uid="uid://slbrpmkv5tr6"]
 
 [ext_resource type="Script" uid="uid://bvvwx70qr3vvd" path="res://Scenes/game_objects/game_manager.gd" id="1_jfump"]
-[ext_resource type="Texture2D" uid="uid://b782exnto4gpr" path="res://Assets/Background/Green.png" id="2_qptf1"]
+[ext_resource type="Texture2D" uid="uid://cxdeqetal6ojy" path="res://Assets/Background/1.png" id="1_qnnww"]
+[ext_resource type="Texture2D" uid="uid://bynnfmsoay765" path="res://Assets/Background/2.png" id="2_4hiyj"]
 [ext_resource type="Texture2D" uid="uid://db45g3p8rffjf" path="res://Assets/Terrain/Terrain (16x16).png" id="3_lhsqt"]
+[ext_resource type="Texture2D" uid="uid://b1wm2ihn8fx6" path="res://Assets/Background/3.png" id="3_oxu8x"]
 [ext_resource type="PackedScene" uid="uid://cqyrq18ac8ylf" path="res://Scenes/game_objects/main_character.tscn" id="4_1p2rh"]
+[ext_resource type="Texture2D" uid="uid://bihjp6gostg24" path="res://Assets/Background/4.png" id="4_as02b"]
+[ext_resource type="Texture2D" uid="uid://xmuay3btekbq" path="res://Assets/Background/5.png" id="5_bpdo2"]
 [ext_resource type="PackedScene" uid="uid://dg45ufwtnru5x" path="res://Scenes/game_objects/collectable.tscn" id="5_wrykp"]
+[ext_resource type="Texture2D" uid="uid://dug00aknhck1w" path="res://Assets/Background/6.png" id="6_aimf2"]
 [ext_resource type="PackedScene" uid="uid://bo5duweryqco7" path="res://Scenes/game_objects/finish.tscn" id="6_qnnww"]
 [ext_resource type="PackedScene" uid="uid://bwgs1mtkg8q0o" path="res://Scenes/game_objects/enemy.tscn" id="8_oxu8x"]
 [ext_resource type="Texture2D" uid="uid://todit6q73l88" path="res://Assets/Items/heart.png" id="9_as02b"]
@@ -179,22 +184,73 @@ sources/0 = SubResource("TileSetAtlasSource_1bvp3")
 
 [node name="Node" type="Node" unique_id=1693354081]
 
+[node name="ParallaxBackground" type="Parallax2D" parent="." unique_id=1334064020]
+
+[node name="FarBackground (Parallax2D)" type="Parallax2D" parent="ParallaxBackground" unique_id=1320049256]
+texture_filter = 1
+scroll_scale = Vector2(0.2, 0.2)
+repeat_size = Vector2(1280, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/FarBackground (Parallax2D)" unique_id=2003526278]
+position = Vector2(619, 332)
+scale = Vector2(2.773, 3)
+texture = ExtResource("1_qnnww")
+
+[node name="DistantMountains (Parallax2D)" type="Parallax2D" parent="ParallaxBackground" unique_id=578482613]
+texture_filter = 1
+scroll_scale = Vector2(0.4, 0.4)
+repeat_size = Vector2(1280, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/DistantMountains (Parallax2D)" unique_id=205605940]
+position = Vector2(614.5, 332)
+scale = Vector2(2.79, 3)
+texture = ExtResource("2_4hiyj")
+
+[node name="DetailLayer (Parallax2D)" type="Parallax2D" parent="ParallaxBackground" unique_id=1535991029]
+texture_filter = 1
+scroll_scale = Vector2(0.6, 0.6)
+repeat_size = Vector2(1280, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/DetailLayer (Parallax2D)" unique_id=1221623907]
+position = Vector2(615.99994, 330)
+scale = Vector2(2.773, 3)
+texture = ExtResource("3_oxu8x")
+
+[node name="MidLayer (Parallax2D)" type="Parallax2D" parent="ParallaxBackground" unique_id=865163859]
+texture_filter = 1
+scroll_scale = Vector2(0.8, 0.8)
+repeat_size = Vector2(1280, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/MidLayer (Parallax2D)" unique_id=1832935509]
+position = Vector2(623.5, 332)
+scale = Vector2(2.755, 3)
+texture = ExtResource("4_as02b")
+
+[node name="NearLayer (Parallax2D)" type="Parallax2D" parent="ParallaxBackground" unique_id=219750029]
+texture_filter = 1
+scroll_scale = Vector2(0.1, 0.1)
+repeat_size = Vector2(1280, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/NearLayer (Parallax2D)" unique_id=1705911407]
+position = Vector2(624.00006, 333.00003)
+scale = Vector2(2.759, 3)
+texture = ExtResource("5_bpdo2")
+
+[node name="ForegroundLayer (Parallax2D)" type="Parallax2D" parent="ParallaxBackground" unique_id=839783076]
+texture_filter = 1
+scroll_scale = Vector2(0.12, 0.12)
+repeat_size = Vector2(1280, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ForegroundLayer (Parallax2D)" unique_id=1107623965]
+position = Vector2(617.99994, 326.49997)
+scale = Vector2(2.744, 3)
+texture = ExtResource("6_aimf2")
+
 [node name="GameManager" type="Node" parent="." unique_id=1863513295]
 unique_name_in_owner = true
 script = ExtResource("1_jfump")
 
 [node name="Scene objects" type="Node" parent="." unique_id=764507428]
-
-[node name="TextureRect" type="TextureRect" parent="Scene objects" unique_id=198109346]
-texture_filter = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_right = 1297.0
-grow_horizontal = 2
-grow_vertical = 2
-texture = ExtResource("2_qptf1")
-stretch_mode = 1
 
 [node name="TileMapLayer" type="TileMapLayer" parent="Scene objects" unique_id=390968168]
 texture_filter = 1
