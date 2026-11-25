@@ -15,17 +15,14 @@ func _on_previous_world_btn_pressed():
 		update_world_title()
 	
 func update_world_title():
-	$WorldTitle.text="world" + str(current_world)
-	var first_level = (current_world -1) * 10 + 1
-	for i in range(10):
-		var button = $MapPath/LevelButtons.get_child(i)
-		button.tooltip_text = "Level" + str(first_level + i)
-		$Background.modulate = Color("#55515f")
+	for i in range(1,6):
+		var world_map = get_node("World" + str(i) + "Map")
+		world_map.visible= (i == current_world)
 	
 	
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	pass # Replace with function body.
+	update_world_title()
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

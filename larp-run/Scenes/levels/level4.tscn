@@ -1,11 +1,17 @@
 [gd_scene format=4 uid="uid://dqa8ka714sdi5"]
 
 [ext_resource type="Script" uid="uid://bvvwx70qr3vvd" path="res://Scenes/game_objects/game_manager.gd" id="1_mrlvs"]
+[ext_resource type="Texture2D" uid="uid://cxdeqetal6ojy" path="res://Assets/Background/1.png" id="1_ryc53"]
 [ext_resource type="Texture2D" uid="uid://cidow0yuuaeaj" path="res://Assets/Background/Blue.png" id="2_1i4wi"]
+[ext_resource type="Texture2D" uid="uid://bynnfmsoay765" path="res://Assets/Background/2.png" id="2_vqu04"]
+[ext_resource type="Texture2D" uid="uid://b1wm2ihn8fx6" path="res://Assets/Background/3.png" id="3_ktrwh"]
 [ext_resource type="Texture2D" uid="uid://db45g3p8rffjf" path="res://Assets/Terrain/Terrain (16x16).png" id="3_r4q1w"]
+[ext_resource type="Texture2D" uid="uid://bihjp6gostg24" path="res://Assets/Background/4.png" id="4_8ls1f"]
 [ext_resource type="PackedScene" uid="uid://cqyrq18ac8ylf" path="res://Scenes/game_objects/main_character.tscn" id="4_ryc53"]
+[ext_resource type="Texture2D" uid="uid://xmuay3btekbq" path="res://Assets/Background/5.png" id="5_hlubj"]
 [ext_resource type="PackedScene" uid="uid://dg45ufwtnru5x" path="res://Scenes/game_objects/collectable.tscn" id="5_vqu04"]
 [ext_resource type="PackedScene" uid="uid://bo5duweryqco7" path="res://Scenes/game_objects/finish.tscn" id="6_ktrwh"]
+[ext_resource type="Texture2D" uid="uid://dug00aknhck1w" path="res://Assets/Background/6.png" id="6_xgki2"]
 [ext_resource type="PackedScene" uid="uid://bwgs1mtkg8q0o" path="res://Scenes/game_objects/enemy.tscn" id="7_8ls1f"]
 [ext_resource type="Script" uid="uid://eidlg1okw7lw" path="res://Scenes/game_objects/fall_area.gd" id="8_1i4wi"]
 [ext_resource type="Texture2D" uid="uid://todit6q73l88" path="res://Assets/Items/heart.png" id="8_hlubj"]
@@ -304,6 +310,68 @@ sources/0 = SubResource("TileSetAtlasSource_1bvp3")
 
 [node name="Node" type="Node" unique_id=1693354081]
 
+[node name="ParallaxBackground" type="Parallax2D" parent="." unique_id=2062993627]
+
+[node name="FarBackground (Parallax2D)" type="Parallax2D" parent="ParallaxBackground" unique_id=1751790476]
+texture_filter = 1
+scroll_scale = Vector2(0.2, 0.2)
+repeat_size = Vector2(1280, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/FarBackground (Parallax2D)" unique_id=1890386360]
+position = Vector2(616, 364)
+scale = Vector2(2.3, 2.3)
+texture = ExtResource("1_ryc53")
+
+[node name="DistantMountains (Parallax2D)" type="Parallax2D" parent="ParallaxBackground" unique_id=1011864533]
+texture_filter = 1
+scroll_scale = Vector2(0.4, 0.4)
+repeat_size = Vector2(1280, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/DistantMountains (Parallax2D)" unique_id=1211989250]
+position = Vector2(616, 364)
+scale = Vector2(2.3, 2.3)
+texture = ExtResource("2_vqu04")
+
+[node name="DetailLayer (Parallax2D)" type="Parallax2D" parent="ParallaxBackground" unique_id=1145951726]
+texture_filter = 1
+scroll_scale = Vector2(0.6, 0.6)
+repeat_size = Vector2(1280, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/DetailLayer (Parallax2D)" unique_id=128697215]
+position = Vector2(616, 364)
+scale = Vector2(2.3, 2.3)
+texture = ExtResource("3_ktrwh")
+
+[node name="MidLayer (Parallax2D)" type="Parallax2D" parent="ParallaxBackground" unique_id=1348158018]
+texture_filter = 1
+scroll_scale = Vector2(0.8, 0.8)
+repeat_size = Vector2(1280, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/MidLayer (Parallax2D)" unique_id=1516088109]
+position = Vector2(616, 364)
+scale = Vector2(2.3, 2.3)
+texture = ExtResource("4_8ls1f")
+
+[node name="NearLayer (Parallax2D)" type="Parallax2D" parent="ParallaxBackground" unique_id=420674083]
+texture_filter = 1
+scroll_scale = Vector2(0.1, 0.1)
+repeat_size = Vector2(1280, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/NearLayer (Parallax2D)" unique_id=1492303402]
+position = Vector2(616, 364)
+scale = Vector2(2.3, 2.3)
+texture = ExtResource("5_hlubj")
+
+[node name="ForegroundLayer (Parallax2D)" type="Parallax2D" parent="ParallaxBackground" unique_id=1542679677]
+texture_filter = 1
+scroll_scale = Vector2(0.12, 0.12)
+repeat_size = Vector2(1280, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ForegroundLayer (Parallax2D)" unique_id=1136582793]
+position = Vector2(616, 364)
+scale = Vector2(2.3, 2.3)
+texture = ExtResource("6_xgki2")
+
 [node name="GameManager" type="Node" parent="." unique_id=1863513295]
 unique_name_in_owner = true
 script = ExtResource("1_mrlvs")
@@ -311,6 +379,7 @@ script = ExtResource("1_mrlvs")
 [node name="Scene objects" type="Node" parent="." unique_id=764507428]
 
 [node name="TextureRect" type="TextureRect" parent="Scene objects" unique_id=198109346]
+visible = false
 texture_filter = 1
 anchors_preset = 15
 anchor_right = 1.0
