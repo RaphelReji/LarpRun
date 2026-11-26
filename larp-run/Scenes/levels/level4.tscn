@@ -16,7 +16,6 @@
 [ext_resource type="Script" uid="uid://eidlg1okw7lw" path="res://Scenes/game_objects/fall_area.gd" id="8_1i4wi"]
 [ext_resource type="Texture2D" uid="uid://todit6q73l88" path="res://Assets/Items/heart.png" id="8_hlubj"]
 [ext_resource type="Script" uid="uid://bhtuvoxl2malg" path="res://Scenes/levels/pause.gd" id="9_xgki2"]
-[ext_resource type="PackedScene" uid="uid://doxvowvqqwnqo" path="res://Scenes/game_objects/saw_trap.tscn" id="16_tnhy0"]
 [ext_resource type="PackedScene" uid="uid://o7m8icrhy5lq" path="res://Scenes/game_objects/spike_trap.tscn" id="17_xgki2"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1bvp3"]
@@ -443,6 +442,7 @@ position = Vector2(2143, 153)
 
 [node name="Finish" parent="Scene objects" unique_id=946222195 instance=ExtResource("6_ktrwh")]
 position = Vector2(1870, 75)
+target_level = "uid://dl77ia7711qhp"
 
 [node name="Enemies" type="Node" parent="Scene objects" unique_id=757102276]
 
@@ -460,11 +460,8 @@ script = ExtResource("8_1i4wi")
 shape = SubResource("WorldBoundaryShape2D_r4q1w")
 
 [node name="SpikeTrap" parent="Scene objects" unique_id=263171828 instance=ExtResource("17_xgki2")]
-position = Vector2(1101, 651)
+position = Vector2(1464, 651)
 scale = Vector2(2.397066, 2.397066)
-
-[node name="SawTrap" parent="Scene objects" unique_id=962631056 instance=ExtResource("16_tnhy0")]
-position = Vector2(1201, 455)
 
 [node name="UI" type="CanvasLayer" parent="." unique_id=488532058]
 
