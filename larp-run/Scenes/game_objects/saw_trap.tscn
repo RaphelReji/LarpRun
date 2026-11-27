@@ -64,11 +64,11 @@ animations = [{
 }],
 "loop": 1,
 "name": &"default",
-"speed": 20.0
+"speed": 17.0
 }]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_ddjpb"]
-radius = 19.026299
+radius = 16.0
 
 [node name="SawTrap" type="Area2D" unique_id=962631056]
 script = ExtResource("1_8ctan")
@@ -77,12 +77,16 @@ script = ExtResource("1_8ctan")
 texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_rxs5i")
 autoplay = "default"
-frame = 6
-frame_progress = 0.51348275
+frame = 7
+frame_progress = 0.09693298
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1574512446]
 shape = SubResource("CircleShape2D_ddjpb")
 
 [node name="RayCast2D" type="RayCast2D" parent="." unique_id=1758214297]
+target_position = Vector2(0, 8)
+
+[node name="RayCast2D2" type="RayCast2D" parent="." unique_id=1010870427]
+target_position = Vector2(0, -8)
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

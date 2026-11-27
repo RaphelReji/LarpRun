@@ -814,6 +814,7 @@ theme_override_font_sizes/font_size = 36
 text = "WORLD 1 - THE BEGINNING"
 
 [node name="World5Map" type="Node2D" parent="." unique_id=1653777103]
+visible = false
 
 [node name="PathLine" type="Line2D" parent="World5Map" unique_id=980315895]
 position = Vector2(-13, 6)
