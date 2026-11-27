@@ -272,6 +272,7 @@ tile_map_data = PackedByteArray("AAADAA4AAAAHAAQAAAAEAA4AAAAHAAQAAAAFAA4AAAAHAAQ
 tile_set = SubResource("TileSet_1pfk3")
 
 [node name="CharacterBody2D" parent="Scene objects" unique_id=2101380640 instance=ExtResource("4_sjedw")]
+unique_name_in_owner = true
 position = Vector2(89, 260)
 
 [node name="Camera2D" type="Camera2D" parent="Scene objects/CharacterBody2D" unique_id=440777884]
@@ -284,6 +285,7 @@ position_smoothing_speed = 7.0
 [node name="Finish" parent="Scene objects" unique_id=946222195 instance=ExtResource("5_oocy4")]
 position = Vector2(2524, 407)
 target_level = "uid://dqvulqmqct50p"
+level_number = 2
 
 [node name="UI" type="CanvasLayer" parent="." unique_id=488532058]
 

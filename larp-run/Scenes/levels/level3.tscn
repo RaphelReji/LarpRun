@@ -276,6 +276,7 @@ tile_map_data = PackedByteArray("AAAAAA4AAAAHAAAAAAABAA4AAAAHAAAAAAACAA4AAAAHAAA
 tile_set = SubResource("TileSet_1pfk3")
 
 [node name="CharacterBody2D" parent="Scene objects" unique_id=2101380640 instance=ExtResource("4_pcesw")]
+unique_name_in_owner = true
 position = Vector2(65, 380)
 
 [node name="Camera2D" type="Camera2D" parent="Scene objects/CharacterBody2D" unique_id=440777884]
@@ -303,6 +304,7 @@ position = Vector2(1231, 586)
 [node name="Finish" parent="Scene objects" unique_id=946222195 instance=ExtResource("6_posmm")]
 position = Vector2(1544, 173)
 target_level = "uid://dqa8ka714sdi5"
+level_number = 3
 
 [node name="Enemies" type="Node" parent="Scene objects" unique_id=757102276]
 

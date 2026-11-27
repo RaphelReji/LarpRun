@@ -14,6 +14,10 @@ config/name="LarpRun"
 run/main_scene="uid://bmtwd7fadlglc"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 
+[autoload]
+
+GameData="*uid://dotu3on6151k0"
+
 [display]
 
 window/size/viewport_width=1280
