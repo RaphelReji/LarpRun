@@ -20,7 +20,7 @@ var points_earned = 100
 func _ready() -> void:
 	level_title.text = "LEVEL " + str(current_level)
 	time_label.text = "TIME: " + str(GameData.completion_time) + " SECONDS"
-	deaths_label.text = "DEATHS: " + str(deaths)
+	deaths_label.text = "DEATHS: " + str(GameData.deaths)
 	points_earned_label.text = "POINTS EARNED: " + str(points_earned)
 	
 	next_level_btn.pressed.connect(_on_next_level_btn_pressed)
