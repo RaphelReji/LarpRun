@@ -1,5 +1,7 @@
 [gd_scene format=3 uid="uid://d1cfpkcjlq8aj"]
 
+[ext_resource type="Script" uid="uid://dw6mq2ohfmxkw" path="res://Scenes/menu/level_complete.gd" id="1_u5kwf"]
+
 [node name="LevelComplete" type="Control" unique_id=1123438966]
 layout_mode = 3
 anchors_preset = 15
@@ -7,6 +9,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_u5kwf")
 
 [node name="DarkBackground" type="ColorRect" parent="." unique_id=1560788664]
 modulate = Color(0.0627451, 0.09411765, 0.15294118, 1)
