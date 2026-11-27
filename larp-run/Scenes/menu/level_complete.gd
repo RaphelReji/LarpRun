@@ -19,7 +19,7 @@ var points_earned = 100
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	level_title.text = "LEVEL " + str(current_level)
-	time_label.text = "TIME: " + str(completion_time) + " SECONDS"
+	time_label.text = "TIME: " + str(GameData.completion_time) + " SECONDS"
 	deaths_label.text = "DEATHS: " + str(deaths)
 	points_earned_label.text = "POINTS EARNED: " + str(points_earned)
 	

@@ -6,6 +6,9 @@ extends Node
 var points = 0
 var lives = 3
 
+func _ready() -> void:
+	GameData.start_level()
+
 func decrease_health():
 	lives -= 1
 	character_body_2d.take_damage()
