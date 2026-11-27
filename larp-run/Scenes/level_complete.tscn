@@ -1,0 +1,95 @@
+[gd_scene format=3 uid="uid://d1cfpkcjlq8aj"]
+
+[node name="LevelComplete" type="Control" unique_id=1123438966]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="DarkBackground" type="ColorRect" parent="." unique_id=1560788664]
+modulate = Color(0.0627451, 0.09411765, 0.15294118, 1)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CenterContainer" type="CenterContainer" parent="." unique_id=1511483203]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CompletionPanel" type="Panel" parent="CenterContainer" unique_id=1989121628]
+custom_minimum_size = Vector2(550, 500)
+layout_mode = 2
+
+[node name="Content" type="VBoxContainer" parent="CenterContainer/CompletionPanel" unique_id=1936635741]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 14
+
+[node name="LevelTitle" type="Label" parent="CenterContainer/CompletionPanel/Content" unique_id=1707568388]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "LEVEL 01"
+horizontal_alignment = 1
+
+[node name="CompleteTitle" type="Label" parent="CenterContainer/CompletionPanel/Content" unique_id=1428656510]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 0.7058824, 1)
+theme_override_font_sizes/font_size = 26
+text = "LEVEL COMPLETE!"
+horizontal_alignment = 1
+
+[node name="TimeLabel" type="Label" parent="CenterContainer/CompletionPanel/Content" unique_id=503533667]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 0.7058824, 1)
+theme_override_font_sizes/font_size = 20
+text = "TIME: 00:00"
+horizontal_alignment = 1
+
+[node name="DeathsLabel" type="Label" parent="CenterContainer/CompletionPanel/Content" unique_id=1111385340]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 0.7058824, 1)
+theme_override_font_sizes/font_size = 20
+text = "DEATHS:0"
+horizontal_alignment = 1
+
+[node name="PointsEarnedLabel" type="Label" parent="CenterContainer/CompletionPanel/Content" unique_id=1864036672]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 0.7058824, 1)
+theme_override_font_sizes/font_size = 22
+text = "POINTS EARNED: +00"
+horizontal_alignment = 1
+
+[node name="WalletLabel" type="Label" parent="CenterContainer/CompletionPanel/Content" unique_id=965639515]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 0.7058824, 1)
+theme_override_font_sizes/font_size = 22
+text = "WALLET: 0"
+horizontal_alignment = 1
+
+[node name="NextLevelBtn" type="Button" parent="CenterContainer/CompletionPanel/Content" unique_id=258230747]
+custom_minimum_size = Vector2(0, 48)
+layout_mode = 2
+text = "NEXT LEVEL"
+
+[node name="ReplayBtn" type="Button" parent="CenterContainer/CompletionPanel/Content" unique_id=1616179611]
+custom_minimum_size = Vector2(0, 48)
+layout_mode = 2
+text = "REPLAY"
+
+[node name="LevelSelectBtn" type="Button" parent="CenterContainer/CompletionPanel/Content" unique_id=558187934]
+custom_minimum_size = Vector2(0, 48)
+layout_mode = 2
+text = "LEVEL SELECT"

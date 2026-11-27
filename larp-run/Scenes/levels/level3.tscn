@@ -302,6 +302,7 @@ position = Vector2(1231, 586)
 
 [node name="Finish" parent="Scene objects" unique_id=946222195 instance=ExtResource("6_posmm")]
 position = Vector2(1544, 173)
+target_level = "uid://dqa8ka714sdi5"
 
 [node name="Enemies" type="Node" parent="Scene objects" unique_id=757102276]
 

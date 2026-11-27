@@ -469,6 +469,31 @@ position = Vector2(941, 484.00003)
 rotation = -1.574855
 scale = Vector2(2.397066, 2.397066)
 
+[node name="SpikeTrap9" parent="Scene objects" unique_id=263171828 instance=ExtResource("15_au7qd")]
+position = Vector2(1518.0001, 557)
+rotation = 0.0016717911
+scale = Vector2(2.397066, 2.397066)
+
+[node name="SpikeTrap10" parent="Scene objects" unique_id=507392725 instance=ExtResource("15_au7qd")]
+position = Vector2(1320, 699)
+rotation = 0.0016717911
+scale = Vector2(2.397066, 2.397066)
+
+[node name="SpikeTrap11" parent="Scene objects" unique_id=1549366439 instance=ExtResource("15_au7qd")]
+position = Vector2(1132, 556)
+rotation = 0.0016717911
+scale = Vector2(2.397066, 2.397066)
+
+[node name="SpikeTrap12" parent="Scene objects" unique_id=582336547 instance=ExtResource("15_au7qd")]
+position = Vector2(986.0001, 76.00009)
+rotation = 0.0016717911
+scale = Vector2(2.397066, 2.397066)
+
+[node name="SpikeTrap13" parent="Scene objects" unique_id=1569935533 instance=ExtResource("15_au7qd")]
+position = Vector2(1604, 77.00001)
+rotation = 0.0016717911
+scale = Vector2(2.397066, 2.397066)
+
 [node name="UI" type="CanvasLayer" parent="." unique_id=488532058]
 
 [node name="Panel" type="Panel" parent="UI" unique_id=1766660438]

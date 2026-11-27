@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="LarpRun"
-run/main_scene="uid://bwgs1mtkg8q0o"
+run/main_scene="uid://bmtwd7fadlglc"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 
 [display]
